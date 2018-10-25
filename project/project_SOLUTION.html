@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My First threeJS project</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="myThreeJSproject"></div>
+
+<script src="three.min.js"></script>
+<script src="OrbitControls.js"></script>
+<script>
+
+	var scene = new THREE.Scene();
+	
+	var camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 0.1, 1000 );
+	camera.position.set(0,5,20)
+	camera.lookAt(0,0,0);
+
+	var renderer = new THREE.WebGLRenderer();
+	renderer.setSize( window.innerWidth, window.innerHeight );
+	document.getElementById('myThreeJSproject').appendChild( renderer.domElement );
+
+	var controls = new THREE.OrbitControls(camera, renderer.domElement);
+
+	var sphereGeometry = new THREE.SphereGeometry(2, 18, 18);
+    var sphereMaterial = new THREE.MeshBasicMaterial({
+      wireframe: false,
+      map: THREE.ImageUtils.loadTexture('earth.jpg')
+    });
+    var Sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+    scene.add(Sphere);
+    Sphere.position.set( 0, 0, 0);
+
+    var cloudSphereGeometry = new THREE.SphereGeometry(2.1, 18, 18);
+    var cloudSphereMaterial = new THREE.MeshBasicMaterial({
+      wireframe: false,
+      transparent: true,
+      opacity: 0.6,
+      map: THREE.ImageUtils.loadTexture('clouds.png')
+    });
+    var cloudSphere = new THREE.Mesh(cloudSphereGeometry, cloudSphereMaterial);
+    scene.add(cloudSphere);
+    cloudSphere.position.set( 0, 0, 0);
+
+    var starSphereGeometry = new THREE.SphereGeometry(800, 18, 18);
+    var starSphereMaterial = new THREE.MeshBasicMaterial({
+      wireframe: false,
+      opacity: 0.4,
+      transparent: true,
+      map: THREE.ImageUtils.loadTexture('stars.png'),
+      side: THREE.BackSide
+    });
+    var starSphere = new THREE.Mesh(starSphereGeometry, starSphereMaterial);
+    scene.add(starSphere);
+    starSphere.position.set( 0, 0, 0);
+
+	animate();
+
+	function animate() {
+		Sphere.rotation.y = Sphere.rotation.y + (Math.PI / 440);
+		cloudSphere.rotation.y = cloudSphere.rotation.y - (Math.PI / 1000);
+		renderer.render( scene, camera );
+		requestAnimationFrame( animate );
+	}
+
+
+</script>
+
+</body>
+</html>
