@@ -43,14 +43,10 @@
     scene.add(Sphere);
     Sphere.position.set( 0, 3, 0);
 
-	animate();
-
-	function animate() {
-		Sphere.rotation.y = Sphere.rotation.y + (Math.PI / 60)
+	renderer.setAnimationLoop(function() {
+		Sphere.rotation.y = Sphere.rotation.y + (Math.PI / 600)
 		renderer.render( scene, camera );
-		requestAnimationFrame( animate );
-	}
-
+	});
 
 </script>
 

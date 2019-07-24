@@ -1,4 +1,4 @@
-<!-- 
+<!--
 SCENE
 CAMERA
 RENDERER
@@ -32,415 +32,416 @@ DRAG AROUND -->
 <!-- Timer/progress bar: Define the presentation duration using "data-duration" in minutes. -->
 <body data-duration="360">
   <main>
-    <section class="slide welcome highlight">
-      <h1><img class="logo-stacked" src="framework/img/llc-logo-stacked-white.png" alt="Ladies Learning Code logo">Welcome!</h1>
-
-      <div class="instructions">
-        <!-- ADD WIFI INFO HERE -->
-        <h2>Get <br> Connected</h2>
-        <p><strong>Wifi:</strong> wifi network</p>
-        <p><strong>Password:</strong> wifi password</p>
-        <hr>
-
-        <h2>Download<br> & Install</h2>
-        <ol class="downloads">
-          <li>Learner files (zip file): <a href="https://github.com/ladieslearningcode/llc-intro-to-threejs/archive/master.zip">http://bit.ly/llc-threejs-intro</a>
-            <ul>
-              <li>unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
-              <li>open <em>slides.html</em> in the browser to view the slides</li>
-            </ul>
-          </li>
-          <li>Atom Editor: <a href="http://atom.io">http://atom.io</a></li>
-          <li>Chrome Browser: <a href="https://www.google.ca/chrome/browser/desktop/">https://www.google.ca/chrome</a></li>
-          </li>
-        </ol>
-      </div>
-      <footer>
-        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
-        <p class="left">Content created by <a href="http://www.wolfewylie.com">William Wolfe-Wylie</a> for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
-        <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
-      </footer>
-    </section>
-
-    <section class="slide intro">
-      <img class="logo" src="framework/img/llc-logo-white.png" alt="Ladies Learning Code logo">
-      <h1 class="heading-bg">
-        <span>THREE.JS<br> For Beginners</span>
-      </h1>
-
-      <!-- FILL IN INSTRUCTOR DETAILS -->
-      <img class="instructor" src="http://placehold.it/225x225" alt="Instructor Name">
-      <h2><span class="cursive">with</span> Instructor name</h2>
-      <ul>
-        <li><a href="mailto:">hello@email.com</a></li>
-        <li><a href="http://website.com">website.com</a></li>
-        <li><a href="http://twitter.com/">@twitter</a></li>
-      </ul>
-
-      <div class="sponsor">
-        <p>In partnership with<br> <img src="framework/img/telus-logo-white.svg" alt="Telus"></p>
-      </div>
-      <footer>
-        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
-        <p class="left">Content created by <a href="http://www.wolfewylie.com">William Wolfe-Wylie</a> for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
-        <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
-      </footer>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Today's project
-
-        Today we'll be creating a 3D model of the earth and a lovely surrounding starscape:
-
-        * Building a 3-dimensional space and filling it with objects
-        * Create controls that allow you to navigate around that space
-        * Make portions of it animate as it moves through space
-
-        View the sample project [here](project/project_SOLUTION.html).
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Course Outline
-
-        <div class="table-of-contents"></div>
-      </script>
-    </section>
-
-    <section class="slide title" data-markdown data-toc>
-      <script type="text/template">
-        # Programming Fundamentals
-        ## Part One
-      </script>
-    </section>
-
-    <section class="slide basic-web-page" data-markdown>
-      <script type="text/template">
-        #HTML + CSS + JavaScript = Basic web page
-
-        **HTML (Hypertext Markup Language)** is a _markup_ language used to define the content.
-
-        <p class="example">I'm just a paragraph.</p>
-
-        **CSS (Cascading Style Sheets)** is a _style sheet_ language used to create the presentation and look of a site.
-
-        <p class="example css">I'm a paragraph with <span>style</span>.</p>
-
-        **JavaScript** is a _programming_ language used to define the behavior and used to add functionality to a website.
-
-        <p class="example" onclick="alert('Clicked!');">I'm a paragraph that can be clicked. Try it!</p>
-      </script>
-    </section>
+	<section class="slide welcome highlight">
+	  <h1><img class="logo-stacked" src="framework/img/llc-logo-stacked-white.png" alt="Ladies Learning Code logo">Welcome!</h1>
+
+	  <div class="instructions">
+		<!-- ADD WIFI INFO HERE -->
+		<h2>Get <br> Connected</h2>
+		<p><strong>Wifi:</strong> wifi network</p>
+		<p><strong>Password:</strong> wifi password</p>
+		<hr>
+
+		<h2>Download<br> & Install</h2>
+		<ol class="downloads">
+		  <li>Learner files (zip file): <a href="https://github.com/ladieslearningcode/llc-intro-to-threejs/archive/master.zip">http://bit.ly/llc-threejs-intro</a>
+			<ul>
+			  <li>unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
+			  <li>open <em>slides.html</em> in the browser to view the slides</li>
+			</ul>
+		  </li>
+		  <li>Atom Editor: <a href="http://atom.io">http://atom.io</a></li>
+		  <li>Firefox Browser: <a
+			  href="https://www.mozilla.org/en-US/firefox/new/">https://www.firefox.com/</a>
+		  </li>
+		</ol>
+	  </div>
+	  <footer>
+		<a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+		<p class="left">Content created by <a href="http://www.wolfewylie.com">William Wolfe-Wylie</a> for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+		<p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
+	  </footer>
+	</section>
+
+	<section class="slide intro">
+	  <img class="logo" src="framework/img/llc-logo-white.png" alt="Ladies Learning Code logo">
+	  <h1 class="heading-bg">
+		<span>THREE.JS<br> For Beginners</span>
+	  </h1>
+
+	  <!-- FILL IN INSTRUCTOR DETAILS -->
+	  <img class="instructor" src="http://placehold.it/225x225" alt="Instructor Name">
+	  <h2><span class="cursive">with</span> Instructor name</h2>
+	  <ul>
+		<li><a href="mailto:">hello@email.com</a></li>
+		<li><a href="http://website.com">website.com</a></li>
+		<li><a href="http://twitter.com/">@twitter</a></li>
+	  </ul>
+<!--
+	  <div class="sponsor">
+		<p>In partnership with<br> <img src="framework/img/telus-logo-white.svg" alt="Telus"></p>
+	  </div>-->
+	  <footer>
+		<a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
+		<p class="left">Content created by <a href="http://www.wolfewylie.com">William Wolfe-Wylie</a> for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+		<p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
+	  </footer>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Today's project
+
+		Today we'll be creating a 3D model of the earth and a lovely surrounding starscape:
+
+		* Building a 3-dimensional space and filling it with objects
+		* Create controls that allow you to navigate around that space
+		* Make portions of it animate as it moves through space
+
+		View the sample project [here](project/project_SOLUTION.html).
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Course Outline
+
+		<div class="table-of-contents"></div>
+	  </script>
+	</section>
+
+	<section class="slide title" data-markdown data-toc>
+	  <script type="text/template">
+		# Programming Fundamentals
+		## Part One
+	  </script>
+	</section>
+
+	<section class="slide basic-web-page" data-markdown>
+	  <script type="text/template">
+		#HTML + CSS + JavaScript = Basic web page
+
+		**HTML (Hypertext Markup Language)** is a _markup_ language used to define the content.
+
+		<p class="example">I'm just a paragraph.</p>
+
+		**CSS (Cascading Style Sheets)** is a _style sheet_ language used to create the presentation and look of a site.
+
+		<p class="example css">I'm a paragraph with <span>style</span>.</p>
+
+		**JavaScript** is a _programming_ language used to define the behavior and used to add functionality to a website.
+
+		<p class="example" onclick="alert('Clicked!');">I'm a paragraph that can be clicked. Try it!</p>
+	  </script>
+	</section>
 
-    <section class="slide title" data-markdown data-toc>
-      <script type="text/template">
-        #JavaScript vs THREE.JS
-      </script>
-    </section>
+	<section class="slide title" data-markdown data-toc>
+	  <script type="text/template">
+		#JavaScript vs THREE.JS
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # What Is JavaScript?
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# What Is JavaScript?
 
-        * controls the *behavior* of HTML documents
-        * used to animate, hide or show items
-        * react to user input
-        * process data and more!
+		* controls the *behavior* of HTML documents
+		* used to animate, hide or show items
+		* react to user input
+		* process data and more!
 
-        Here's what JavaScript looks like:
+		Here's what JavaScript looks like:
 
-        ```
-        var myVariable = "Hello World";
-        function sayHello(){
-          alert(myVariable);
-        }
-        sayHello();
-        ```
-      </script>
-    </section>
+		```
+		var myVariable = "Hello World";
+		function sayHello(){
+		  alert(myVariable);
+		}
+		sayHello();
+		```
+	  </script>
+	</section>
 
-    <section class="slide highlight" data-markdown>
-      <script type="text/template">
-        # JavaScript is a Programming Language
+	<section class="slide highlight" data-markdown>
+	  <script type="text/template">
+		# JavaScript is a Programming Language
 
-        Because JavaScript is a programming language, the structure and syntax include more complexities than HTML or CSS.
+		Because JavaScript is a programming language, the structure and syntax include more complexities than HTML or CSS.
 
-        The basic building blocks of programming include features such as *variables*, *functions*, *objects* or control structures such as *if* statements or *loops*.
+		The basic building blocks of programming include features such as *variables*, *functions*, *objects* or control structures such as *if* statements or *loops*.
 
-      </script>
-    </section>
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #What is THREE.JS?
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#What is THREE.JS?
 
-        * it is a cross-browser JavaScript *library*
-        * Designed for visual people, it's all about visualization
-        * Open Source, free for everyone to use
-        * is still JavaScript
+		* it is a cross-browser JavaScript *library*
+		* Designed for visual people, it's all about visualization
+		* Open Source, free for everyone to use
+		* is still JavaScript
 
-        THREE.JS ***is*** JavaScript so it's important to have an understanding of some basic JavaScript principles first.
+		THREE.JS ***is*** JavaScript so it's important to have an understanding of some basic JavaScript principles first.
 
-        Also, note that programming languages often require a little bit more code than HTML & CSS to see results in the browser.
-      </script>
-    </section>
+		Also, note that programming languages often require a little bit more code than HTML & CSS to see results in the browser.
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #The Console
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#The Console
 
-        Before we get into the nitty-gritty details of these JavaScript principles, let’s take a look at a tool called the console.
+		Before we get into the nitty-gritty details of these JavaScript principles, let’s take a look at a tool called the console.
 
-        We'll be using this tool in the upcoming exercises to focus on getting used to the programming syntax.
+		We'll be using this tool in the upcoming exercises to focus on getting used to the programming syntax.
 
-        This way, we can write programs without relying on HTML & CSS and learn some of the fundamental programming concepts first.
-      </script>
-    </section>
+		This way, we can write programs without relying on HTML & CSS and learn some of the fundamental programming concepts first.
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # The Console
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# The Console
 
-        * interactive browser tool
-        * enter commands and interact directly with a web page
-        * can also log diagnostic information and check for errors
+		* interactive browser tool
+		* enter commands and interact directly with a web page
+		* can also log diagnostic information and check for errors
 
-        The console in Chrome looks like this:
-        ![The Console](framework/img/workshop/the_console_x.jpg)
+		The console looks like this:
+		![The Console](framework/img/workshop/the_console_x.jpg)
 
-        **Important!** The blue `>` symbol represents a space to enter your input but you don't have to actually type the symbol.
-      </script>
-    </section>
+		**Important!** The blue `>` symbol represents a space to enter your input but you don't have to actually type the symbol.
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Accessing the Console
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Accessing the Console
 
-        You can open the console when viewing _any_ HTML page. In Chrome, there are different ways to open the Console tab.
+		You can open the console when viewing _any_ HTML page. In Firefox, there are different ways to open the Console tab.
 
-        Keyboard shortcut:
-        `COMMAND + OPTION + J` (MAC)  / `CONTROL + SHIFT + J` (WINDOWS)
+		Keyboard shortcut:
+		`COMMAND + OPTION + K` (MAC)  / `CONTROL + SHIFT + K` (WINDOWS)
 
-        OR
+		OR
 
-        Select: `View > Developer > JavaScript Console`.
+		Select: `Tools > Web Developer > Web Console`.
 
-        Open the console in this slide presentation. Take a moment to practice opening and closing the console until you’re comfortable with it.
+		Open the console in this slide presentation. Take a moment to practice opening and closing the console until you’re comfortable with it.
 
-        ---
+		---
 
-        ###Pro tip!
-        The console also shows any errors on the page so if you open the console on any existing web page, you *may* see some error messages.
+		###Pro tip!
+		The console also shows any errors on the page so if you open the console on any existing web page, you *may* see some error messages.
 
-      </script>
-    </section>
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Class Exercise: Working with Numbers
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Class Exercise: Working with Numbers
 
-        In the console, after the `>` symbol, type your favorite number and press the enter/return key. You will see something like this:
+		In the console, after the `>` symbol, type your favorite number and press the enter/return key. You will see something like this:
 
-        ![console number](framework/img/workshop/console-number.gif) <!-- .element: width="85%" -->
+		![console number](framework/img/workshop/console-number.gif) <!-- .element: width="85%" -->
 
-        The ```>``` symbol represents a space for your input.
-        The ```<``` symbol represents the **returned value** of your input.
+		The ```>``` symbol represents a space for your input.
+		The ```<``` symbol represents the **returned value** of your input.
 
-        ---
-        ###Pro tip!
-        To increase the font size of the console, use `Command/Control +`.
-        Use  `Command/Control 0` to return it back to the default size.
-      </script>
-    </section>
+		---
+		###Pro tip!
+		To increase the font size of the console, use `Command/Control +`.
+		Use  `Command/Control 0` to return it back to the default size.
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Class Exercise: Working with Text
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Class Exercise: Working with Text
 
-        You can also input text BUT when using text, make sure you include it between quotes (more on this soon).
+		You can also input text BUT when using text, make sure you include it between quotes (more on this soon).
 
-        ![console string](framework/img/workshop/console-string.gif)<!-- .element: width="85%" -->
+		![console string](framework/img/workshop/console-string.gif)<!-- .element: width="85%" -->
 
-        The command you input into the console gets *evaluated* and a value is returned back to you.
-      </script>
-    </section>
+		The command you input into the console gets *evaluated* and a value is returned back to you.
+	  </script>
+	</section>
 
-    <section class="slide title" data-markdown data-toc>
-      <script type="text/template">
-        # Variables & Functions
-        ## The Building Blocks of JavaScript
-      </script>
-    </section>
+	<section class="slide title" data-markdown data-toc>
+	  <script type="text/template">
+		# Variables & Functions
+		## The Building Blocks of JavaScript
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # What *is* a variable?
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# What *is* a variable?
 
-        Variables are like containers or a box.
+		Variables are like containers or a box.
 
-        * used to *store* values
-        * can be used any time, whenever you need them
-        * gives a *name* to a *value*.
+		* used to *store* values
+		* can be used any time, whenever you need them
+		* gives a *name* to a *value*.
 
-        A variable is a named memory location which contains information, to be used at a later time.
+		A variable is a named memory location which contains information, to be used at a later time.
 
-        For example, a variable could be used to store a customer's email address.  Then, the variable can be used to send a confirmation email.
-      </script>
-    </section>
+		For example, a variable could be used to store a customer's email address.  Then, the variable can be used to send a confirmation email.
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Declaring (creating) a variable
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Declaring (creating) a variable
 
-        * use the keyword `var`
-        * name the variable anything you want*
-        * end the command with a semi-colon (`;`)
+		* use the keyword `var`
+		* name the variable anything you want*
+		* end the command with a semi-colon (`;`)
 
-        ```javascript
-        var myVariable = "Hello!";
-        ```
+		```javascript
+		var myVariable = "Hello!";
+		```
 
-        The value `Hello` is given to the name `myVariable` and is declared using the keyword `var`. This is *assigning* a value to the *variable*.
+		The value `Hello` is given to the name `myVariable` and is declared using the keyword `var`. This is *assigning* a value to the *variable*.
 
-        Evaluate everything to the right of the equals sign, then assign the value to the variable on the left of the equals sign.
+		Evaluate everything to the right of the equals sign, then assign the value to the variable on the left of the equals sign.
 
-        *See next slide for info about naming conventions <!-- .element: class="note" -->
-      </script>
-    </section>
+		*See next slide for info about naming conventions <!-- .element: class="note" -->
+	  </script>
+	</section>
 
-    <section class="slide nested-list" data-markdown>
-      <script type="text/template">
-        #Variables: Naming conventions
+	<section class="slide nested-list" data-markdown>
+	  <script type="text/template">
+		#Variables: Naming conventions
 
-        * Cannot contain spaces:
-          * use camelCase for names with multiple words.
-          * every new word is capitalized
-          * the result looks kind of like `camelHumps`
-        * Cannot contain reserved symbols:
-          * math symbols (+, -, =, etc...)
-          * javascript-specific symbols ({, }, :, etc...)
-        * Cannot begin with:
-          * a digit (0 - 9)
-        * JavaScript is case sensitive
-          * so variable names are also case sensitive
-        * Use a descriptive names:
-        `var firstName;` ← Clear that first name will go here.
-        `var fn;`        ← Not as obvious as firstName.
-        `var x; `        ← Not clear at all.
-      </script>
-    </section>
+		* Cannot contain spaces:
+		  * use camelCase for names with multiple words.
+		  * every new word is capitalized
+		  * the result looks kind of like `camelHumps`
+		* Cannot contain reserved symbols:
+		  * math symbols (+, -, =, etc...)
+		  * javascript-specific symbols ({, }, :, etc...)
+		* Cannot begin with:
+		  * a digit (0 - 9)
+		* JavaScript is case sensitive
+		  * so variable names are also case sensitive
+		* Use a descriptive names:
+		`var firstName;` ← Clear that first name will go here.
+		`var fn;`        ← Not as obvious as firstName.
+		`var x; `        ← Not clear at all.
+	  </script>
+	</section>
 
-    <section class="slide title" data-markdown>
-      <script type="text/template">
-        #Variable Types
-        ##Strings, Numbers, Booleans
-      </script>
-    </section>
+	<section class="slide title" data-markdown>
+	  <script type="text/template">
+		#Variable Types
+		##Strings, Numbers, Booleans
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Variable Types: Strings
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Variable Types: Strings
 
-        When storing text values, like words or sentences, the variable type is a *string* value.
+		When storing text values, like words or sentences, the variable type is a *string* value.
 
-        Strings must be contained in quotes.
+		Strings must be contained in quotes.
 
-        ```javascript
-        var greeting = "Hello!";
-        ```
+		```javascript
+		var greeting = "Hello!";
+		```
 
-        ```javascript
-        var greeting = "Good morning!";
-        ```
+		```javascript
+		var greeting = "Good morning!";
+		```
 
-        ```javascript
-        var greeting = "Good evening!";
-        ```
-      </script>
-    </section>
+		```javascript
+		var greeting = "Good evening!";
+		```
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Variable Types: Strings & Concatenation
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Variable Types: Strings & Concatenation
 
-        You can *add* strings together to join multiple values. This is called **concatenation**.
+		You can *add* strings together to join multiple values. This is called **concatenation**.
 
-        ```javascript
-        var greeting = "Good";
-        var greetingTime = "morning";
-        var greetingFull = greeting + " " + greetingTime + "!";
-        ```
+		```javascript
+		var greeting = "Good";
+		var greetingTime = "morning";
+		var greetingFull = greeting + " " + greetingTime + "!";
+		```
 
-        The JavaScript above **concatenates** the three items together like so:
+		The JavaScript above **concatenates** the three items together like so:
 
-        ```
-        var greetingFull = greeting + " " + greetingTime + "!";
-        var greetingFull = Good + space + morning + exclamation mark
-        var greetingFull = Good morning!
-        ```
-      </script>
-    </section>
+		```
+		var greetingFull = greeting + " " + greetingTime + "!";
+		var greetingFull = Good + space + morning + exclamation mark
+		var greetingFull = Good morning!
+		```
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Class exercise: Declare a Variable (15 minutes)
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Class exercise: Declare a Variable (15 minutes)
 
-        Go through the next three slides on your own and get it work on your own, then we'll do it together as a class.
+		Go through the next three slides on your own and get it work on your own, then we'll do it together as a class.
 
-        Let's create a variable called `favFood` and give it a value.
+		Let's create a variable called `favFood` and give it a value.
 
-        >What is the syntax for creating a variable and assigning a string value?
+		>What is the syntax for creating a variable and assigning a string value?
 
-        <pre class="delayed"><code>var favFood = "pizza";</code></pre>
+		<pre class="delayed"><code>var favFood = "pizza";</code></pre>
 
-        <blockquote class="delayed"><p>Add the above code into the console. What value gets returned?<p></blockquote>
+		<blockquote class="delayed"><p>Add the above code into the console. What value gets returned?<p></blockquote>
 
-        <pre class="delayed"><code>undefined</code></pre>
+		<pre class="delayed"><code>undefined</code></pre>
 
-        <p class="delayed">That is perfectly fine. Remember, variables are used to <em>store</em> values until you're ready to use them. Let's break it down in the next slide.</p>
-      </script>
-    </section>
+		<p class="delayed">That is perfectly fine. Remember, variables are used to <em>store</em> values until you're ready to use them. Let's break it down in the next slide.</p>
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Class exercise: Using Variables
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Class exercise: Using Variables
 
-        When using the console tool, it will automatically return a value when you input an instruction. Declaring a variable just *stores* the value until you're ready to use it.
+		When using the console tool, it will automatically return a value when you input an instruction. Declaring a variable just *stores* the value until you're ready to use it.
 
-        `var favFood` is just holding on to the value, so it returns nothing (undefined). But now, JavaScript knows it exists.
+		`var favFood` is just holding on to the value, so it returns nothing (undefined). But now, JavaScript knows it exists.
 
-        To actually **use** the variable, just type `favFood` into the console. It will now **return** the value that it was storing and look something like this:
+		To actually **use** the variable, just type `favFood` into the console. It will now **return** the value that it was storing and look something like this:
 
-        ```javascript
-        > var favFood = "pizza";
-        < undefined
-        > favFood;
-        < "pizza"
-        ```
-        <!-- ![](framework/img/workshop/console-fav-food.gif) -->
-      </script>
-    </section>
+		```javascript
+		> var favFood = "pizza";
+		< undefined
+		> favFood;
+		< "pizza"
+		```
+		<!-- ![](framework/img/workshop/console-fav-food.gif) -->
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Class exercise: Concatenate
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Class exercise: Concatenate
 
-        Let’s try **concatenating** some strings with the `favFood` variable. In the console, try typing this command:
+		Let’s try **concatenating** some strings with the `favFood` variable. In the console, try typing this command:
 
-        ```
-        "My favorite food is " + favFood;
-        ```
+		```
+		"My favorite food is " + favFood;
+		```
 
-        ![concatenate example](framework/img/workshop/console-concatenate.gif)
+		![concatenate example](framework/img/workshop/console-concatenate.gif)
 
-        > **Challenge!** How would you add a period to the end of the sentence?
-      </script>
-    </section>
+		> **Challenge!** How would you add a period to the end of the sentence?
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
+	<section class="slide" data-markdown>
+	  <script type="text/template">
 # Variable Types: Strings and Quotes
 
 Strings values can be wrapped in either 'single quotes' or "double quotes." You can use either style but you must start and end the string with the same mark.
@@ -450,1264 +451,1394 @@ But be careful! In the example below, this will cause an error.
 ```javascript
 var fails = 'This string's value is not going to work!';
 /*          ^           ^
-            |___________|
-            |
-            Javascript thinks the second apostrophe closes the first.
-            It then expects the command to end with a semicolon (;)
-            right after and returns an error.
+			|___________|
+			|
+			Javascript thinks the second apostrophe closes the first.
+			It then expects the command to end with a semicolon (;)
+			right after and returns an error.
 */
 ```
-      </script>
-    </section>
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Variable Types: Strings and Quotes
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Variable Types: Strings and Quotes
 
-        There are two ways to fix it.
+		There are two ways to fix it.
 
-        Use double quotes!
-        ```javascript
-        var works = "This string's value is going to work!";
-        ```
+		Use double quotes!
+		```javascript
+		var works = "This string's value is going to work!";
+		```
 
-        Or *escape* it by using a backslash.
+		Or *escape* it by using a backslash.
 
-        ```javascript
-        var alsoWorks = 'This string\'s value is not going to work!';
-        ```
+		```javascript
+		var alsoWorks = 'This string\'s value is not going to work!';
+		```
 
-        > Try adding each line into your console to check for errors.
-      </script>
-    </section>
+		> Try adding each line into your console to check for errors.
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Variable Types: Numbers
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Variable Types: Numbers
 
-        Variable **values** can also be numbers.
+		Variable **values** can also be numbers.
 
-        ```
-        var meaningOfLife = 42;
-        ```
+		```
+		var meaningOfLife = 42;
+		```
 
-        JavaScript can also do math.
+		JavaScript can also do math.
 
-        `+` addition, `-` subtraction, `*` multiplication, `/` division
+		`+` addition, `-` subtraction, `*` multiplication, `/` division
 
-        ```javascript
-        var addition = 5 + 2;
-        ```
-        This will return a value of `7`.
+		```javascript
+		var addition = 5 + 2;
+		```
+		This will return a value of `7`.
 
-      </script>
-    </section>
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Variable Types: Numbers
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Variable Types: Numbers
 
-        These operations work whether the values are numbers, or the values are stored in a variable.
+		These operations work whether the values are numbers, or the values are stored in a variable.
 
-        ```javascript
-         var startingValue = 5;
-         var multiplier = 2;
-         var endingValue = startingValue * multiplier;
-        ```
+		```javascript
+		 var startingValue = 5;
+		 var multiplier = 2;
+		 var endingValue = startingValue * multiplier;
+		```
 
-        This will return a value of `10`.
+		This will return a value of `10`.
 
-      </script>
-    </section>
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Class Exercise: Numbers & operators
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Class Exercise: Numbers & operators
 
-        In the console, let's try using the various math operations.
+		In the console, let's try using the various math operations.
 
-        `+` addition, `-` subtraction, `*` multiplication and `/` division.
+		`+` addition, `-` subtraction, `*` multiplication and `/` division.
 
-        Examples:
-        ```javascript
-        > 2 + 2;
-        > 199 * 42;
-        ```
+		Examples:
+		```javascript
+		> 2 + 2;
+		> 199 * 42;
+		```
 
-        Remember BEDMAS? (Brackets, Exponents, Division, Multiplication, Addition, Subtraction) This also applies in JavaScript.
+		Remember BEDMAS? (Brackets, Exponents, Division, Multiplication, Addition, Subtraction) This also applies in JavaScript.
 
-        ```javascript
-        > 2 + 2 * 4;
-        > (2 + 2) * 4;
-        ```
-      </script>
-    </section>
+		```javascript
+		> 2 + 2 * 4;
+		> (2 + 2) * 4;
+		```
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Class Exercise: numbers & operators
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Class Exercise: numbers & operators
 
-        Let's create a program for finding a person's age.
+		Let's create a program for finding a person's age.
 
-        1. Create two variables, one for `currentYear` and one for `birthYear`.
-        1. Subtract the two values.
+		1. Create two variables, one for `currentYear` and one for `birthYear`.
+		1. Subtract the two values.
 
-        It will look something like this:
+		It will look something like this:
 
-        ```javascript
-        var currentYear = 2016;
-        var birthYear = 1979;
-        var age = currentYear - birthYear;
-
-        ```
-
-        <!-- ![doing math with variables in the console](framework/img/workshop/console-math-variables.gif) -->
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Exercise: Create a JavaScript Program! (~10 mins)
+		```javascript
+		var currentYear = 2016;
+		var birthYear = 1979;
+		var age = currentYear - birthYear;
+
+		```
+
+		<!-- ![doing math with variables in the console](framework/img/workshop/console-math-variables.gif) -->
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Exercise: Create a JavaScript Program! (~10 mins)
 
-        Using variables & arithmetic operators, calculate how many seconds there are in a day.
+		Using variables & arithmetic operators, calculate how many seconds there are in a day.
 
-        (You can choose your own variable names. Just make sure to adhere to best practices.)<!-- .element: class="note" -->
+		(You can choose your own variable names. Just make sure to adhere to best practices.)<!-- .element: class="note" -->
 
-        1. Declare variables & values for:
-          * `secondsPerMinute`
-          * `minutesPerHour`
-          * `hoursPerDay`
-        1. Declare a `secondsPerDay` variable and use arithmetic operators to calculate the value.
-        1. **Bonus!** Use concatenation to output "There are x seconds per day."
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Exercise Solution
-
-        ```javascript
-        var secondsPerMinute = 60;
-        var minutesPerHour = 60;
-        var hoursPerDay = 24;
-        var secondsPerDay = secondsPerMinute * minutesPerHour * hoursPerDay;
-
-        // This command will output the value of secondsPerDay
-        secondsPerDay;
-
-        // Concatenating strings with the secondsPerDay variable.
-        var sentence = "There are " + secondsPerDay + " seconds per day.";
-
-        // This command will output the value of sentence.
-        sentence;
-        ```
-
-        ```
-        // This is a JavaScript comment by the way :) Use it to leave notes.
-        ```
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Comments!
-
-        Just like HTML and CSS, you can also leave comments in JavaScript.
-
-        ```
-        // This is how you leave a single line comment.
-
-        // You can write many single line comments.
-        // Just make sure to add the double slash
-        // for every new line.
-        ```
-
-        Here's another way to comment larger blocks of text.
-
-        ```javascript
-        /* This is how you leave
-        multi-line comments for when you
-        want to write a longer message */
-        ```
-
-        Multi-line comments are great for "hiding" large blocks of code so you can try something new without erasing your old code.
-        >**Careful:** Multi-line comments do not **nest**. That means you cannot place a multi-line comment inside another!
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Variable Types: Booleans
-
-        Variables that only contain a `true` or `false` value are called **booleans**.  You can set values to `true` or `false`.
-
-        ```javascript
-        var lightIsOn = true;
-        ```
-        OR
-        ```javascript
-        var lightIsOn = false;
-        ```
-
-        Values can also be returned as `true` or `false`.
-
-        > Try typing `2 > 4` in the console.  What value gets returned?
-      </script>
-    </section>
-
-    <section class="slide title" data-markdown>
-      <script type="text/template">
-        #Variable Types
-        ##Objects
-      </script>
-    </section>
-
-    <section id="objects" class="slide" data-markdown>
-      <script type="text/template">
-        # Variable Types: Objects
-
-        **Objects** can be thought of as a variable that can hold *multiple* values. To *declare* an object, use the curly brackets `{}`.
-
-        The values are written in `property: value` pairs. Each pair is separated by a comma, except for the last one.
-
-        ```
-        var myObject = {
-          propertyName: propertyValue,
-          anotherPropertyName: anotherPropertyValue
-        }
-        ```
-
-        ```
-        var coffeeOrder = {
-          drinkType: "latte",
-          milk: "almond",
-          flavor: "caramel"
-        }
-        ```
-
-        Let's take a closer look at the syntax.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Declare the Object
-
-        ```
-        var coffeeOrder = { }
-        ```
-
-        * Declare the object with `var`.
-        * The object name is `coffeeOrder`.
-        * The curly bracket starts and ends the object.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Add the Properties to the Object
-
-        ```
-        drinkType: "latte",
-        milk: "almond",
-        flavor: "caramel"
-        ```
-
-        * the property name must start with a letter and contain no spaces
-        * a colon (:) is used to separate name from value
-        * a comma (,) separates properties
-        * can be repeated for as many properties as you like
-        * the last pair of `property:value` does not end with a comma
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Objects: Putting it all together!
-
-
-        ```
-        var coffeeOrder = {
-          drinkType: "latte",
-          milk: "almond",
-          flavor: "caramel"
-        }
-        ```
+		1. Declare variables & values for:
+		  * `secondsPerMinute`
+		  * `minutesPerHour`
+		  * `hoursPerDay`
+		1. Declare a `secondsPerDay` variable and use arithmetic operators to calculate the value.
+		1. **Bonus!** Use concatenation to output "There are x seconds per day."
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Exercise Solution
+
+		```javascript
+		var secondsPerMinute = 60;
+		var minutesPerHour = 60;
+		var hoursPerDay = 24;
+		var secondsPerDay = secondsPerMinute * minutesPerHour * hoursPerDay;
+
+		// This command will output the value of secondsPerDay
+		secondsPerDay;
+
+		// Concatenating strings with the secondsPerDay variable.
+		var sentence = "There are " + secondsPerDay + " seconds per day.";
+
+		// This command will output the value of sentence.
+		sentence;
+		```
+
+		```
+		// This is a JavaScript comment by the way :) Use it to leave notes.
+		```
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Comments!
+
+		Just like HTML and CSS, you can also leave comments in JavaScript.
+
+		```
+		// This is how you leave a single line comment.
+
+		// You can write many single line comments.
+		// Just make sure to add the double slash
+		// for every new line.
+		```
+
+		Here's another way to comment larger blocks of text.
+
+		```javascript
+		/* This is how you leave
+		multi-line comments for when you
+		want to write a longer message */
+		```
+
+		Multi-line comments are great for "hiding" large blocks of code so you can try something new without erasing your old code.
+		>**Careful:** Multi-line comments do not **nest**. That means you cannot place a multi-line comment inside another!
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Variable Types: Booleans
+
+		Variables that only contain a `true` or `false` value are called **booleans**.  You can set values to `true` or `false`.
+
+		```javascript
+		var lightIsOn = true;
+		```
+		OR
+		```javascript
+		var lightIsOn = false;
+		```
+
+		Values can also be returned as `true` or `false`.
+
+		> Try typing `2 > 4` in the console.  What value gets returned?
+	  </script>
+	</section>
+
+	<section class="slide title" data-markdown>
+	  <script type="text/template">
+		#Variable Types
+		##Objects
+	  </script>
+	</section>
+
+	<section id="objects" class="slide" data-markdown>
+	  <script type="text/template">
+		# Variable Types: Objects
+
+		**Objects** can be thought of as a variable that can hold *multiple* values. To *declare* an object, use the curly brackets `{}`.
+
+		The values are written in `property: value` pairs. Each pair is separated by a comma, except for the last one.
+
+		```
+		var myObject = {
+		  propertyName: propertyValue,
+		  anotherPropertyName: anotherPropertyValue
+		}
+		```
+
+		```
+		var coffeeOrder = {
+		  drinkType: "latte",
+		  milk: "almond",
+		  flavor: "caramel"
+		}
+		```
+
+		Let's take a closer look at the syntax.
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Declare the Object
+
+		```
+		var coffeeOrder = { }
+		```
+
+		* Declare the object with `var`.
+		* The object name is `coffeeOrder`.
+		* The curly bracket starts and ends the object.
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Add the Properties to the Object
+
+		```
+		drinkType: "latte",
+		milk: "almond",
+		flavor: "caramel"
+		```
+
+		* the property name must start with a letter and contain no spaces
+		* a colon (:) is used to separate name from value
+		* a comma (,) separates properties
+		* can be repeated for as many properties as you like
+		* the last pair of `property:value` does not end with a comma
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Objects: Putting it all together!
+
+
+		```
+		var coffeeOrder = {
+		  drinkType: "latte",
+		  milk: "almond",
+		  flavor: "caramel"
+		}
+		```
 
-        Reminder, objects are similar to variables because they can be used to hold values. But they can hold *multiple* values!
-
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Accessing an Object Member
+		Reminder, objects are similar to variables because they can be used to hold values. But they can hold *multiple* values!
+
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Accessing an Object Member
 
-        Since objects hold multiple values, they can't be accessed by using the variable name. Object values are accessed using **dot notation**.
+		Since objects hold multiple values, they can't be accessed by using the variable name. Object values are accessed using **dot notation**.
 
-        To access the value for the `drinkType` property, it would look like this:
+		To access the value for the `drinkType` property, it would look like this:
 
-        ```
-        var coffeeOrder = {
-          drinkType: "latte",
-          milk: "almond",
-          flavor: "caramel"
-        }
-        ```
-
-        ```
-        coffeeOrder.drinkType
-        ```
-
-        > What value would `coffeeOrder.drinkType` return?
-      </script>
-    </section>
+		```
+		var coffeeOrder = {
+		  drinkType: "latte",
+		  milk: "almond",
+		  flavor: "caramel"
+		}
+		```
+
+		```
+		coffeeOrder.drinkType
+		```
+
+		> What value would `coffeeOrder.drinkType` return?
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Class exercise: Objects
-
-        Using the object below, let's add this entire code block into our console and practice accessing various property values.
-
-        ```javascript
-        var coffeeOrder = {
-          drinkType: "latte",
-          milk: "almond",
-          flavor: "caramel"
-        }
-        ```
-
-        > How would you access the value for `milk` and `flavor`? Try it out in the console.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Variable Types
-
-        As you've just seen, there are *many* different variable types in JavaScript and many rules about how to write them.
-
-        There are actually a few more. You can read all about them [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures).
-
-        It will take practice getting used to the different rules. But, in a nutshell, *variables* are used to hold values and the values themselves have different *types*.
-      </script>
-    </section>
-
-    <section class="slide title" data-markdown>
-      <script type="text/template">
-        #Functions
-        ## Repeating instructions
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Functions
-
-        A `function` is a name for a **set** of commands or instructions.
-
-        When using a function, it executes all the commands contained within, making it easier to make the code repeat repetitive steps.
-
-        Let's look at two functions, `alert()` and `prompt()`.  These come built into JavaScript, for free! Note the syntax, the parentheses `()`, must be included.
-
-        > Go back to the console and type both functions in, one at a time, and see what happens.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Functions and Arguments
-
-        We've seen now that `alert()` and `prompt()` create a pop-ups in the browser but the pop-ups are blank.  An *argument* can be *passed* into the functions by adding a value within the parentheses `()`.
-
-        Try this in the console:
-
-        ```
-        alert("Hello!");
-        ```
-
-        ```
-        prompt("What day is it today?");
-        ```
-
-        It will look similar to this:
-
-        ![console function example](framework/img/workshop/console-alert-prompt.gif)
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Make your own functions!
-
-        You can create your own functions that can contain any number of instructions that you need, including other functions.
-
-        Use the `function` keyword to declare a new function.
-
-        ```javascript
-        function sayAnything(){
-          alert("Hello!");
-          prompt("What day is it today?");
-        }
-        ```
-        The above example creates a new **function** called `sayAnything` but similar to variables, nothing will happen until the function is **called**.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Calling a function
-
-        To **call** a function, use the function name plus parentheses `()`.  Remember `alert();` and `prompt();`?
-
-        Let's add this whole function declaration into the console and then execute it by *calling* it.
-
-        ```javascript
-        function sayAnything(){
-          alert("Hello!");
-          prompt("What day is it today?");
-        }
-        ```
-        ```
-        sayAnything();
-        ```
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Objects, Functions and Methods
-
-        What's the difference between these two?  The second one kind of looks like a function right?
-        ``` javascript
-        alert();
-        console.log();
-        ```
-
-        `alert()` is a **function**, it works on its own.
-
-        `log()` is a **method** because it's attached to an **object**, `console`. It will log a message only into the console tool.
-
-        This is much easier for testing and debugging than using `alert()`. No more pesky pop-ups!
-      </script>
-    </section>
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Class exercise: Objects
+
+		Using the object below, let's add this entire code block into our console and practice accessing various property values.
+
+		```javascript
+		var coffeeOrder = {
+		  drinkType: "latte",
+		  milk: "almond",
+		  flavor: "caramel"
+		}
+		```
+
+		> How would you access the value for `milk` and `flavor`? Try it out in the console.
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Variable Types
+
+		As you've just seen, there are *many* different variable types in JavaScript and many rules about how to write them.
+
+		There are actually a few more. You can read all about them [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures).
+
+		It will take practice getting used to the different rules. But, in a nutshell, *variables* are used to hold values and the values themselves have different *types*.
+	  </script>
+	</section>
+
+	<section class="slide title" data-markdown>
+	  <script type="text/template">
+		#Functions
+		## Repeating instructions
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Functions
+
+		A `function` is a name for a **set** of commands or instructions.
+
+		When using a function, it executes all the commands contained within, making it easier to make the code repeat repetitive steps.
+
+		Let's look at two functions, `alert()` and `prompt()`.  These come built into JavaScript, for free! Note the syntax, the parentheses `()`, must be included.
+
+		> Go back to the console and type both functions in, one at a time, and see what happens.
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Functions and Arguments
+
+		We've seen now that `alert()` and `prompt()` create a pop-ups in the browser but the pop-ups are blank.  An *argument* can be *passed* into the functions by adding a value within the parentheses `()`.
+
+		Try this in the console:
+
+		```
+		alert("Hello!");
+		```
+
+		```
+		prompt("What day is it today?");
+		```
+
+		It will look similar to this:
+
+		![console function example](framework/img/workshop/console-alert-prompt.gif)
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Make your own functions!
+
+		You can create your own functions that can contain any number of instructions that you need, including other functions.
+
+		Use the `function` keyword to declare a new function.
+
+		```javascript
+		function sayAnything(){
+		  alert("Hello!");
+		  prompt("What day is it today?");
+		}
+		```
+		The above example creates a new **function** called `sayAnything` but similar to variables, nothing will happen until the function is **called**.
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Calling a function
+
+		To **call** a function, use the function name plus parentheses `()`.  Remember `alert();` and `prompt();`?
+
+		Let's add this whole function declaration into the console and then execute it by *calling* it.
+
+		```javascript
+		function sayAnything(){
+		  alert("Hello!");
+		  prompt("What day is it today?");
+		}
+		```
+		```
+		sayAnything();
+		```
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Objects, Functions and Methods
+
+		What's the difference between these two?  The second one kind of looks like a function right?
+		``` javascript
+		alert();
+		console.log();
+		```
+
+		`alert()` is a **function**, it works on its own.
+
+		`log()` is a **method** because it's attached to an **object**, `console`. It will log a message only into the console tool.
+
+		This is much easier for testing and debugging than using `alert()`. No more pesky pop-ups!
+	  </script>
+	</section>
 
    <section class="slide centered">
-      <img src="http://33.media.tumblr.com/2466ab981143fb18653f8f09bce061c7/tumblr_n982qbvyFQ1s5lf2ro1_400.gif" alt="">
-    </section>
+	  <img src="http://33.media.tumblr.com/2466ab981143fb18653f8f09bce061c7/tumblr_n982qbvyFQ1s5lf2ro1_400.gif" alt="">
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Functions & THREE.JS
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Functions & THREE.JS
 
-        A function is one of the most powerful tools in JavaScript. THREE.JS, as it turns out, is a giant object whith a whole pile of functions available to us.
+		A function is one of the most powerful tools in JavaScript. THREE.JS, as it turns out, is a giant object with a whole pile of functions available to us.
 
-        Remember, THREE.JS is a <!-- .element: class="delayed" -->**JavaScript library**.
+		Remember, THREE.JS is a <!-- .element: class="delayed" -->**JavaScript library**.
 
-        It's library of functions/methods used to simplify your program. You can download it and use in your projects.  There's a lot more to JavaScript but this intro will help to get up and running with THREE.JS!<!-- .element: class="delayed" -->
+		It's library of functions/methods used to simplify your program. You can download it and use in your projects.  There's a lot more to JavaScript but this intro will help to get up and running with THREE.JS!<!-- .element: class="delayed" -->
+	  </script>
+	</section>
+
+	<section class="slide centered" data-markdown>
+		<script type="text/template">
+		#Bring on the third dimension
+
+		![](framework/img/workshop/got_this.gif)
       </script>
-    </section>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Getting started
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Getting started
 
-        The first step is telling your web page how to read THREE.JS commands. That means importing the library. Throw this code at the end of your BODY tag.
+		The first step is telling your web page how to read THREE.JS commands. That means importing the library. Throw this code at the end of your BODY tag.
 
-        ```
-        < div id="myTHREEJSProject"></ div>
+		```
+		< div id="myTHREEJSProject"></ div>
 
-        < script src="three.min.js">< /script>
-        ```
+		< script src="three.min.js">< /script>
+		```
 
-        We add the CANVAS element to hold all of our 3D output. Instead of drawing HTML elements, we're going to be drawing to the canvas. 
+		We add the CANVAS element to hold all of our 3D output. Instead of drawing HTML elements, we're going to be drawing to the canvas.
 
-        You can find the file "three.min.js" in the projects folder with the files you downloaded. That script tag will give us access to all the functions THREE.JS has to offer. 
+		You can find the file "three.min.js" in the projects folder with the files you downloaded. That script tag will give us access to all the functions THREE.JS has to offer.
 
-      </script>
-    </section>
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # What can THREE.JS do?
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# What can THREE.JS do?
 
-        * Create and render 3D scenes for the web
-        * Calculate and manipulate 3D objects and lights 
-        * Handle complex animations and camera movements
-        * and much more!
+		* Create and render 3D scenes for the web
+		* Calculate and manipulate 3D objects and lights
+		* Handle complex animations and camera movements
+		* and much more!
 
-        The library contains many, many built-in functions and methods.
+		The library contains many, many built-in functions and methods.
 
-        View the documentation here: [https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene](https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene).
-      </script>
-    </section>
+		View the documentation here: [https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene](https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene).
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown data-toc>
+	<section class="slide" data-markdown data-toc>
 
-      <script type="text/template">
-       #Setting up THREE.JS for the first time
+	  <script type="text/template">
+	   #Setting up THREE.JS for the first time
 
-        Now that you have your SCRIPT tag in your HTML file to import THREE.JS, you can add another SCRIPT tag below that one and we can begin to write our first bits of 3D magic.
+		Now that you have your SCRIPT tag in your HTML file to import THREE.JS, you can add another SCRIPT tag below that one and we can begin to write our first bits of 3D magic.
 
-        There are four key parts of any THREE.JS project that you need to be familiar with: 
+		There are four key parts of any THREE.JS project that you need to be familiar with:
 
-        *SCENE: this is the giant master element that contains all your objects, lights, cameras and animations.
-        
-        *CAMERA: The camera is the browser, the viewer's window into your scene. You can control alot about your camera.
-        
-        *Renderer: The is the giant calculator in the sky that measures how much the light changes, how fast your browser can render your scene and a thousand other things all at once. 
-        
-        *ANIMATE: The one time you want an infinite loop, triggering the renderer as frequently as you need it to. 
+		*SCENE: this is the giant master element that contains all your objects, lights, cameras and animations.
 
-      </script>
-    </section>
+		*CAMERA: The camera is the browser, the viewer's window into your scene. You can control alot about your camera.
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-      #The Scene
+		*Renderer: The is the giant calculator in the sky that measures how much the light changes, how fast your browser can render your scene and a thousand other things all at once.
 
-      Setting up a new THREE.JS scene is pretty straight forward. It's one line of code. But it's so important it deserves its own slide.
+		*ANIMATE: The one time you want an infinite loop, triggering the renderer as frequently as you need it to.
 
-      ```
-      var scene = new THREE.Scene();
-      ```
+	  </script>
+	</section>
 
-      Basically everything we want to build, we're going to add to our scene. From objects to lights to the world itself.
-      </script>
-    </section>
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+	  #The Scene
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-      #The camera
+	  Setting up a new THREE.JS scene is pretty straight forward. It's one line of code. But it's so important it deserves its own slide.
 
-      If your scene is the world, then the camera is the eyes you'll see it with. The great thing is these eyes are very flexible. 
+	  ```
+	  var scene = new THREE.Scene();
+	  ```
 
-      The camera setup takes four values that control how you see your world: field of view; aspect ratio; near field; far field. 
+	  Basically everything we want to build, we're going to add to our scene. From objects to lights to the world itself.
+	  </script>
+	</section>
 
-      ```
-      var camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 0.1, 1000 );
-      ```
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+	  #The camera
 
-      The field of view is the number of degrees you can see in front of you. 
+	  If your scene is the world, then the camera is the eyes you'll see it with. The great thing is these eyes are very flexible.
 
-      The aspect ratio typically just takes your viewers window width and window height. 
+	  The camera setup takes four values that control how you see your world: field of view; aspect ratio; near field; far field.
 
-      The near field is the closest an object can get to the camera and still be visible. 
+	  ```
+	  var camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 0.1, 1000 );
+	  ```
 
-      The far field is the furthest an object can be from the camera without disappearing into the distance. 
-    </script>
-    </section>
+	  The field of view is the number of degrees you can see in front of you.
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #A word about units of measurement
+	  The aspect ratio typically just takes your viewer's window width and window height.
 
-        The numbers for near field and far field in the previous slide are arbitrary. THREE.JS doesn't measure units of distance or size in any particular fashion. These are not pixels, metres, kilometres or millimetres. They are simply, units. 
+	  The near field is the closest an object can get to the camera and still be visible.
 
-        As you build a scene, the only crucial detail is that these units of measurement are consistent. If you decide that everything is in centimetres, keep it that way for your entire project. 
+	  The far field is the furthest an object can be from the camera without disappearing into the distance.
+	</script>
+	</section>
 
-        This allows you to easily build your world in any scale you like, from nanometres to light years. 
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#A word about units of measurement
 
-      </script>
-    </section>
+		The numbers for near field and far field in the previous slide are arbitrary. THREE.JS doesn't measure units of distance or size in any particular fashion. These are not pixels, metres, kilometres or millimetres. They are simply, units.
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Set the position of your camera
+		As you build a scene, the only crucial detail is that these units of measurement are consistent. If you decide that everything is in centimetres, keep it that way for your entire project.
 
-        The camera exists, but it's not placed anywhere. All placements in your world exist in a 3D coordinate system: X, Y and Z. 
+		This allows you to easily build your world in any scale you like, from nanometres to light years.
 
-        ![Coordinate system](framework/img/workshop/coordinates.png)
-  
-        ```
-        camera.position.set(0,5,20)
-        ```
-        
-        So we're placing the camera flat along the X axis, 5 units up along the Y axis and 20 units over along the Z axis.
+	  </script>
+	</section>
 
-      </script>
-    </section>
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Set the position of your camera
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #The renderer
+		The camera exists, but it's not placed anywhere. All placements in your world exist in a 3D coordinate system: X, Y and Z.
 
-        Without a renderer, there's nothing for the camera to look at. The renderer is what builds the world and handles all of the calculations that make it complicated. 
+		![Coordinate system](framework/img/workshop/coordinates.png)
 
-        ```
-        var renderer = new THREE.WebGLRenderer();
-        renderer.setSize( window.innerWidth, window.innerHeight );
-        document.getElementById('myThreeJSproject').appendChild( renderer.domElement );
-        ```
+		```
+		camera.position.set(0,5,20)
+		```
 
-        These three lines establish it, set its size in accordance with the size of the user's window, and then append it to the body of your HTML document. 
+		So we're placing the camera flat along the X axis, 5 units up along the Y axis and 20 units over along the Z axis.
 
-        If you inspect the elements of your page now, you'll find an CANVAS element has been plopped on to your page. 
+	  </script>
+	</section>
 
-      </script>
-    </section>
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#The renderer
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Now animate it
+		Without a renderer, there's nothing for the user to look at. The renderer is what builds the world and handles all of the calculations that make it complicated, presents it from the camera's point of view and draws the result on our canvas.
 
-        Animating your newly created world is an infinite loop. It lives inside of a function and then calls itself. This ensures that any changes you make to the world are reflected in it immediately, instead of it just being stuck in a static state, which just isn't any fun at all. 
-        
-        ```
-        function animate() {
-          renderer.render( scene, camera );
-          requestAnimationFrame( animate );
-        }
-        ```
-  
-        and don't forget to call that function for the first time to kick it all into action. 
+		```
+		var renderer = new THREE.WebGLRenderer();
+		renderer.setSize( window.innerWidth, window.innerHeight );
+		document.getElementById('myThreeJSproject').appendChild( renderer.domElement );
+		```
 
-        ```
-        animate();
-        ```
+		These three lines establish it, set its size in accordance with the size of the user's window, and then append it to the body of your HTML document.
 
+		If you inspect the elements of your page now, you'll find an CANVAS element has been plopped on to your page.
 
-      </script>
-    </section>
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Your code to this point
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Now animate it
 
-        This is your setup. This gets your world established and ready to fill with anything your imagination can conjure.
+		Animating your newly created world is an infinite loop. It lives inside of the renderer we already set up, and it constantly loops over itself. This ensures that any changes you make to the world are reflected to the camera immediately, instead of it just being stuck in a static state, which just isn't any fun at all.
 
-        ```
-        var scene = new THREE.Scene();
-        var camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 0.1, 1000 );
-        camera.position.set(0,5,20)
-        camera.lookAt(0,0,0);
+		```
+		renderer.setAnimationLoop(function() {
+		  renderer.render( scene, camera );
+		});
+		```
 
-        var renderer = new THREE.WebGLRenderer();
-        renderer.setSize( window.innerWidth, window.innerHeight );
-        document.getElementById('myThreeJSproject').appendChild( renderer.domElement );
-        
-        animate();
+	  </script>
+	</section>
 
-        function animate() {
-          renderer.render( scene, camera );
-          requestAnimationFrame( animate );
-        }
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Your code to this point
 
-        ```
-        
-        But this will just give you a big black box. There's nothing in your world yet, so it's black space. 
+		This is your setup. This gets your world established and ready to fill with anything your imagination can conjure.
 
-        So let's add something to your world!
+		```
+		var scene = new THREE.Scene();
+		var camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 0.1, 1000 );
+		camera.position.set(0,5,20)
+		camera.lookAt(0,0,0);
 
-      </script>
-    </section>
+		var renderer = new THREE.WebGLRenderer();
+		renderer.setSize( window.innerWidth, window.innerHeight );
+		document.getElementById('myThreeJSproject').appendChild( renderer.domElement );
 
-    <section class="slide" data-markdown data-toc>
-      <script type="text/template">
-        #3D objects
+		renderer.setAnimationLoop(function() {
+		  renderer.render( scene, camera );
+		});
 
-        3D objects are, conveniently enough, packaged in three layers: Geometry; material; mesh. 
+		```
 
-        *Geometry: These are the geometric shapes that make up your objects. They are made up of vertices and faces (the points in the air and the flat plates between them). They are the math, the raw numbers, of your 3D shape.
+		But this will just give you a big black box. There's nothing in your world yet, so it's black space.
 
-        *Material: This is what you wrape your geometry in. The colour, or image, you lay on top of it. Your material can have opacity, reflectivity and a few other properties you can control. It's the designed portion of the element. 
+		So let's add something to your world!
 
-        *Mesh: The combination of Geometry and Material, it's what you create to meld the two together before adding the final shape to your scene. 
+	  </script>
+	</section>
 
+	<section class="slide" data-markdown data-toc>
+	  <script type="text/template">
+		#3D objects
 
-      </script>
-    </section>
+		3D objects are conveniently packaged in three layers: Geometry; material; mesh.
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Adding 3D objects
+		*Geometry: These are the geometric shapes that make up your objects. They are made up of vertices and faces (the points in the air and the flat plates between them). They are the math, the raw numbers, of your 3D shape.
 
-        We're going to create a flat plane hovering in space. Like a tabletop. 
+		*Material: This is what you wrape your geometry in. The colour, or image, you lay on top of it. Your material can have opacity, reflectivity and a few other properties you can control. It's the designed portion of the element.
 
-        First, create the geometry.
+		*Mesh: The combination of Geometry and Material, it's what you create to meld the two together before adding the final shape to your scene.
 
-        ```
-        var planeGeometry = new THREE.PlaneGeometry(20,20,20,20);
-        ```
 
-        There are four numbers in this method. The first two are how wide and tall your plane is. The second two are how many squares there are along those width and height planes. 
+	  </script>
+	</section>
 
-        Remember that these numbers are just generic "units" of measurement, they're not actually tied to a specific point of measurement like metres or inches or pixels.
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Adding 3D objects
 
-        Essentially, the first two amount to size and the second two amount to resolution. 
+		We're going to create a flat plane hovering in space. Like a tabletop.
 
-      </script>
-    </section>
+		First, create the geometry.
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Adding 3D objects
+		```
+		var planeGeometry = new THREE.PlaneGeometry(20,20,20,20);
+		```
 
-        Then create your material. Note that the options you can apply to your material fit inside an OBJECT in the middle. Also notice that the colour value is a hex code just like a lot of other colour values you've seen. 
-        
-        ```
-        var planeMaterial = new THREE.MeshBasicMaterial({
-          color: '#00ff00',
-          wireframe: true
-        });
-        ```
-        
-        Then merge them to create a Mesh. 
-        
-        ```
-        var fullPlane = new THREE.Mesh(planeGeometry, planeMaterial);
-        ```
+		There are four numbers in this method. The first two are how wide and tall your plane is. The second two are how many squares there are along those width and height planes.
 
-      </script>
-    </section>
+		Remember that these numbers are just generic "units" of measurement, they're not actually tied to a specific point of measurement like metres or inches or pixels.
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Add your first element
+		Essentially, the first two amount to size and the second two amount to resolution.
 
-        Remember our scene? The all mighty master of our world that collects everything? Now that comes into play. 
+	  </script>
+	</section>
 
-        We add the plane to our scene.
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Adding 3D objects
 
+		Then create your material. Note that the options you can apply to your material fit inside an OBJECT in the middle. Also notice that the colour value is a hex code just like a lot of other colour values you've seen.
 
-        ```
-        scene.add(fullPlane);
-        ```
+		```
+		var planeMaterial = new THREE.MeshBasicMaterial({
+		  color: '#00ff00',
+		  wireframe: true
+		});
+		```
 
-        Now refresh the page and notice a lovely wireframe square in the middle. 
+		Then merge them to create a Mesh.
 
-      </script>
-    </section>
+		```
+		var fullPlane = new THREE.Mesh(planeGeometry, planeMaterial);
+		```
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Let's make it flat
+	  </script>
+	</section>
 
-        Once you've added 3D objects to your scene, you can manipulate them. You can rotate them, move them or even animate them. 
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Add your first element
 
-        Let's look at a rotation to make our vertical plane a horizontal one. Let's turn our wall into a floor.  
+		Remember our scene? The all mighty master of our world that collects everything? Now that comes into play.
 
-        ```
-        fullPlane.rotation.x = Math.PI/2;
-        ```
+		We add the plane to our scene.
 
-        Notice that you're adjusting the Mesh, the combination of the geometry and the material. 
 
-        To do that, you're adjusting a property of your mesh. In this case, the rotation property. Then within that property you adjust one of the three dimensions of it. 
+		```
+		scene.add(fullPlane);
+		```
 
-        So you can adjust rotation.x, rotation.z and rotation.y.
+		Now refresh the page and notice a lovely wireframe square in the middle.
 
-        I find it useful to use my hands and rotate my wrist along those planes to help visualize how I want to move those planes. 
+	  </script>
+	</section>
 
-        Math.PI is a useful stand-in for degrees because Math.PI is a half-way rotation. 2 * Math.PI is a full 360-degrees around. Math.PI / 2 is a quarter turn. 
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Let's make it flat
 
-      </script>
-    </section>
+		Once you've added 3D objects to your scene, you can manipulate them. You can rotate them, move them or even animate them.
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # All together now
+		Let's look at a rotation to make our vertical plane a horizontal one. Let's turn our wall into a floor.
 
-        This is what your code should look like at this point. It's divided into the core blocks to set it up, add the objects, and then animate it. 
+		```
+		fullPlane.rotation.x = Math.PI/2;
+		```
 
+		Notice that you're adjusting the Mesh, the combination of the geometry and the material.
 
-        ```
-        var scene = new THREE.Scene();
-        var camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 0.1, 1000 );
-        camera.position.set(0,5,20)
-        camera.lookAt(0,0,0);
+		To do that, you're adjusting a property of your mesh. In this case, the rotation property. Then within that property you adjust one of the three dimensions of it.
 
-        var renderer = new THREE.WebGLRenderer();
-        renderer.setSize( window.innerWidth, window.innerHeight );
-        document.getElementById('myThreeJSproject').appendChild( renderer.domElement );
+		So you can adjust rotation.x, rotation.z and rotation.y.
 
-        var planeGeometry = new THREE.PlaneGeometry(20,20,20,20);
-        var planeMaterial = new THREE.MeshBasicMaterial({
-          color: '#00ff00',
-          wireframe: true
-        });
-        var fullPlane = new THREE.Mesh(planeGeometry, planeMaterial);
-        scene.add(fullPlane);
-        fullPlane.rotation.x = Math.PI/2;
+		I find it useful to use my hands and rotate my wrist along those planes to help visualize how I want to move those planes.
 
-        animate();
+		Math.PI is a useful stand-in for degrees because Math.PI is a half-way rotation. 2 * Math.PI is a full 360-degrees around. Math.PI / 2 is a quarter turn.
 
-        function animate() {
-          renderer.render( scene, camera );
-          requestAnimationFrame( animate );
-        }
-        ```
+	  </script>
+	</section>
 
-      </script>
-    </section>
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# All together now
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Other default geometries
+		This is what your code should look like at this point. It's divided into the core blocks to set it up, add the objects, and then animate it.
 
-        The options available to you in materials are basically the same for any object you add to your scene. The geometries, though, those can change a lot. 
 
-        A flat plane is the simplest form of geometry. But there are dozens of other ways to make shapes. 
+		```
+		var scene = new THREE.Scene();
+		var camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 0.1, 1000 );
+		camera.position.set(0,5,20)
+		camera.lookAt(0,0,0);
 
-        The THREE.JS documents have code samples you can use to build a lot of them at links like this: [https://threejs.org/docs/index.html#api/geometries/BoxGeometry](https://threejs.org/docs/index.html#api/geometries/BoxGeometry)
+		var renderer = new THREE.WebGLRenderer();
+		renderer.setSize( window.innerWidth, window.innerHeight );
+		document.getElementById('myThreeJSproject').appendChild( renderer.domElement );
 
-        Scroll down the left hand side-bar of that page and see all of the geometry options that are part of the default code that comes with THREE.JS.
+		var planeGeometry = new THREE.PlaneGeometry(20,20,20,20);
+		var planeMaterial = new THREE.MeshBasicMaterial({
+		  color: '#00ff00',
+		  wireframe: true
+		});
+		var fullPlane = new THREE.Mesh(planeGeometry, planeMaterial);
+		scene.add(fullPlane);
+		fullPlane.rotation.x = Math.PI/2;
 
-      </script>
-    </section>
+		renderer.setAnimationLoop(function() {
+		  renderer.render( scene, camera );
+		});
+		```
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Building it out
+	  </script>
+	</section>
 
-        From there, building out your model is pretty repetitive. You add new Meshes, adjust their materials, and position them in the scene.
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Other default geometries
 
-        Positioning them is fun. Let's add a new Mesh and position it above our new floor. 
+		The options available to you in materials are basically the same for any object you add to your scene. The geometries, though, those can change a lot.
 
-        We'll use a Sphere geometry for this one.
+		A flat plane is the simplest form of geometry. But there are dozens of other ways to make shapes.
 
-        [https://threejs.org/docs/index.html#api/geometries/SphereGeometry](https://threejs.org/docs/index.html#api/geometries/SphereGeometry)
+		The THREE.JS documents have code samples you can use to build a lot of them at links like this: [https://threejs.org/docs/index.html#api/geometries/BoxGeometry](https://threejs.org/docs/index.html#api/geometries/BoxGeometry)
 
-        We build it and add it to our scene exactly like the other one:
+		Scroll down the left hand side-bar of that page and see all of the geometry options that are part of the default code that comes with THREE.JS.
 
-        ```
-        var sphereGeometry = new THREE.SphereGeometry(2, 8, 8);
-        var sphereMaterial = new THREE.MeshBasicMaterial({
-          color: '#00ff00',
-          wireframe: true
-        });
-        var Sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
-        scene.add(Sphere);
-        ```
+	  </script>
+	</section>
 
-        The three numbers that go with the SphereGeometry are: Width, vertical segments and horizontal segments. As with our previous geometry, it's about size and resolution.
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Building it out
 
-      </script>
-    </section>
+		From there, building out your model is pretty repetitive. You add new Meshes, adjust their materials, and position them in the scene.
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Positioning your mesh
-        
-        Position is an attribute of any object. Therefore it's an attribute you can set and one you can animate. 
+		Positioning them is fun. Let's add a new Mesh and position it above our new floor.
 
-        ```
-        Sphere.position.set( 0, 3, 0);
+		We'll use a Sphere geometry for this one.
 
-        ```
+		[https://threejs.org/docs/index.html#api/geometries/SphereGeometry](https://threejs.org/docs/index.html#api/geometries/SphereGeometry)
 
-        As before, the position values are X, then Y, then Z. So this Sphere will be dead centre in the space, but 3 units high on the Y axis. Since the sphere is only 2 units wide, it'll float just above the plane below it. 
+		We build it and add it to our scene exactly like the other one:
 
-        ![console function example](framework/img/workshop/wireframe.png)
+		```
+		var sphereGeometry = new THREE.SphereGeometry(2, 8, 8);
+		var sphereMaterial = new THREE.MeshBasicMaterial({
+		  color: '#00ff00',
+		  wireframe: true
+		});
+		var Sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+		scene.add(Sphere);
+		```
 
-      </script>
-    </section>
+		The three numbers that go with the SphereGeometry are: Width, vertical segments and horizontal segments. As with our previous geometry, it's about size and resolution.
 
-    <section class="slide" data-markdown data-toc>
-      <script type="text/template">
-        #Now let's make it REALLY cool
+	  </script>
+	</section>
 
-        The whole thing about creating 3D spaces is the ability to navigate them. To move around them and see them from every angle. 
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Positioning your mesh
 
-        The most popular add-on for adding controls to your scene is called OrbitControls. These controlls allow you to zoom in and zoom out, sweep around and see your scene from every angle imaginable. 
+		Position is an attribute of any object. Therefore it's an attribute you can set and one you can animate.
 
-        In the SecondExercise folder, open that index.html file in your code editor.
+		```
+		Sphere.position.set( 0, 3, 0);
 
-      </script>
-    </section>
+		```
 
+		As before, the position values are X, then Y, then Z. So this Sphere will be dead centre in the space, but 3 units high on the Y axis. Since the sphere is only 2 units wide, it'll float just above the plane below it.
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Orbit controls
+		![console function example](framework/img/workshop/wireframe.png)
 
-        In the SecondExercise folder, the index.html file has one line commented out. 
+	  </script>
+	</section>
 
-        ```
-        <!-- <script src="OrbitControls.js"></script> -->
-        ```
+	<section class="slide" data-markdown data-toc>
+	  <script type="text/template">
+		#Now let's make it REALLY cool
 
-        There is also a file in that folder called OrbitControls.js.
+		The whole thing about creating 3D spaces is the ability to navigate them. To move around them and see them from every angle.
 
-        Uncomment that line to import orbit controls and feel the power of this fully operational JavaScript library. 
+		The most popular add-on for adding controls to your scene is called OrbitControls. These controlls allow you to zoom in and zoom out, sweep around and see your scene from every angle imaginable.
 
-        Then, in your script, add one line RIGHT BELOW YOUR RENDERER line, but before you start adding your Meshes. 
+		In the SecondExercise folder, open that index.html file in your code editor.
 
-        ```
-        var controls = new THREE.OrbitControls(camera, renderer.domElement);
-        ```
+	  </script>
+	</section>
 
-        The OrbitControls only need to know two things: The camera watching your scene (because it controls it) and the renderer that it's changing.
 
-        Now reload your page with those two changes and have some fun.
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Orbit controls
 
-      </script>
-    </section>
+		In the SecondExercise folder, the index.html file has one line commented out.
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Adding the magic
+		```
+		<!-- <script src="OrbitControls.js"></script> -->
+		```
 
-        Dragging your scene to move around it is great. But when it moves on its own, it's like magic. 
+		There is also a file in that folder called OrbitControls.js.
 
-        Just as we set the position attribute of our Sphere mesh, and we set the rotation attribute of our plane mesh, we can also animate these attributes. 
+		Uncomment that line to import orbit controls and feel the power of this fully operational JavaScript library.
 
-        Animating a 3D scene is tricky, though. Because you're not actually animating anything, you're just changing something a lot of times in tiny increments: Just like a real-world cartoon animation.
+		Then, in your script, add one line RIGHT BELOW YOUR RENDERER line, but before you start adding your Meshes.
 
-      </script>
-    </section>
+		```
+		var controls = new THREE.OrbitControls(camera, renderer.domElement);
+		```
 
-    <section class="slide" data-markdown data-toc>
-      <script type="text/template">
-        # Animation: the basics
+		The OrbitControls only need to know two things: The camera watching your scene (because it controls it) and the renderer that it's changing.
 
-        In a cartoon, animators draw a new drawing for every 24th of a second of their animation. Each drawing is only on screen for 1/24th of a second, but the rapid succession of images gives the illusion of smooth movement. 
+		Now reload your page with those two changes and have some fun.
 
-        ![console function example](framework/img/workshop/steamboat.gif)
+	  </script>
+	</section>
 
-        THREE.JS works the same way. But we work faster, in increments of 1/60th of a second. 
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Adding the magic
 
-        So any changes you make are going to be reflected 60 times per second. That's very fast and can be difficult to wrap your head around the first few times you do it. 
+		Dragging your scene to move around it is great. But when it moves on its own, it's like magic.
 
-        But let's try it out.
+		Just as we set the position attribute of our Sphere mesh, and we set the rotation attribute of our plane mesh, we can also animate these attributes.
 
+		Animating a 3D scene is tricky, though. Because you're not actually animating anything, you're just changing something a lot of times in tiny increments: Just like a real-world cartoon animation.
 
-      </script>
-    </section>
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Animation: The not-so-basics
-        
-        Everything you want to animate lives in the animate() function. Makes sense, right? Right now, that function looks like this: 
+	<section class="slide centered" data-markdown data-toc>
+	  <script type="text/template">
+		# Animation: the basics
 
-        ```
-        function animate() {
-          renderer.render( scene, camera );
-          requestAnimationFrame( animate );
-        }
-        ```
+		In a cartoon, animators draw a new drawing for every 24th of a second of their animation. Each drawing is only on screen for 1/24th of a second, but the rapid succession of images gives the illusion of smooth movement.
 
-        All it does is request the animation frame from the browser, then trigger the renderer to update everything, then does it all over again. 
+		![console function example](framework/img/workshop/steamboat.gif)
 
-        This allows your controls to work properly, but it doesn't really do anything else. 
+		THREE.JS works the same way. But we work faster, in increments of 1/60th of a second.
 
-        Until now...
-      </script>
-    </section>
+		So any changes you make are going to be reflected 60 times per second. That's very fast and can be difficult to wrap your head around the first few times you do it.
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Animation: Implementation
+		But let's try it out.
 
-        Let's start by rotating the sphere on its end, like a top. 
 
-        Inside the animate() function, add a new line right at the top, before anything else: 
+	  </script>
+	</section>
 
-        ```
-        Sphere.rotation.y = Sphere.rotation.y + 0.01
-        ```
-        
-        Basic math: The animation takes whatever the sphere's Y rotation was, then adds 0.01 to it. 
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Animation: The not-so-basics
 
-        It does that 60 times per second, which results in a nice, slow, lovely rotation.
+		Everything you want to animate lives in the setAnimationLoop() function. Makes sense, right? Right now, that function looks like this:
 
+		```
+		renderer.setAnimationLoop(function() {
+		  renderer.render( scene, camera );
+		});
+		```
 
-      </script>
-    </section>
+		All it does is render the scene, then loop back the beginning and render the scene again, then does it all over again.
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Animation: Better implementation
+		This allows your orbit controls to work properly, but it doesn't really do anything else.
 
-        Knowing that you're working with 60 frames per second, and knowing that Math.PI is half of a full circle, you can make it easier to conceptualize the speed:
+		Until now...
+	  </script>
+	</section>
 
-        ```
-        Sphere.rotation.y = Sphere.rotation.y + (Math.PI / 60)
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Animation: Implementation
 
-        ```
+		Let's start by rotating the sphere on its end, like a top.
 
-        That will make it speedy. It will take one second to complete a half-rotation, two seconds to complete a full rotation.
+		Inside the setAnimationLoop() function, add a new line right at the top, before anything else:
 
-        ```
-        Sphere.rotation.y = Sphere.rotation.y + (Math.PI / 120)
+		```
+		Sphere.rotation.y = Sphere.rotation.y + 0.01
+		```
 
-        ```
-        
-        That will make it half as speedy. Increments of 60 are increments of one second per rotation. This will take two seconds to complete a half rotation, four seconds to complete a full rotation.
+		Basic math: The animation takes whatever the sphere's Y rotation was, then adds 0.01 to it.
 
-      </script>
-    </section>
+		It does that 60 times per second, which results in a nice, slow, lovely rotation.
 
-    <section class="slide" data-markdown data-toc>
-      <script type="text/template">
-        #Project time!
 
-        Let's make the Earth! Then let's give the Earth fancy clouds! Then let's make the Earth float in space!
+	  </script>
+	</section>
 
-        It's going to be awesome. Clearly. Let's get started. 
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Animation: Better implementation
 
-      </script>
-    </section>
+		Knowing that you're working with 60 frames per second, and knowing that Math.PI is half of a full circle, you can make it easier to conceptualize the speed:
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #An image of the Earth
+		```
+		Sphere.rotation.y = Sphere.rotation.y + (Math.PI / 60)
 
-        The surface of the Earth is complex. Let's not try to animate every possible ocean and mountain on Earth. Let's just use an image. There's one already in the Project folder. 
+		```
 
-        Open the index.html of the Project folder and let's start with our Sphere Material.
+		That will make it speedy. It will take one second to complete a half-rotation, two seconds to complete a full rotation.
 
-        Change the wireframe to false.
+		```
+		Sphere.rotation.y = Sphere.rotation.y + (Math.PI / 120)
 
-        Eliminate the colour attribute entirely, since our image has its own colour in it. 
+		```
 
-        And add one new bit of fanciness: 
+		That will make it half as speedy. Increments of 60 are increments of one second per rotation. This will take two seconds to complete a half rotation, four seconds to complete a full rotation.
 
-        ```
-        map: THREE.ImageUtils.loadTexture('earth.jpg')
-        ```
+	  </script>
+	</section>
 
-        Collectively this looks like:
-        
-        ```
-        var sphereMaterial = new THREE.MeshBasicMaterial({
-          wireframe: false,
-          map: THREE.ImageUtils.loadTexture('earth.jpg')
-        });
-        ```
+	<section class="slide" data-markdown data-toc>
+	  <script type="text/template">
+		#Project time!
 
+		Let's make the Earth! Then let's give the Earth fancy clouds! Then let's make the Earth float in space!
 
+		It's going to be awesome. Clearly. Let's get started.
 
-      </script>
-    </section>
+	  </script>
+	</section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Mapping an image to a Material
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#An image of the Earth
 
-        Remember that a Material is just the outer coating around a Geometry. Until now we've applied a static colour to it, but it can just as easily be an image. 
+		The surface of the Earth is complex. Let's not try to animate every possible ocean and mountain on Earth. Let's just use an image.
 
-        Wrapping an image around a geometry is called MAPPING the image to that geometry. 
+		Open the index.html of the Project folder and let's start with our Sphere Material.
 
-        Then when we make the Mesh, we combine that image wrap and the geometry into a new 3D object. Now we have ourselves a rotating Earth. 
+		Change the wireframe to false.
 
-      </script>
-    </section>
+		Eliminate the colour attribute entirely, since our image has its own colour in it.
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Smoothing out the Earth
+		And add one new bit of fanciness:
 
-        That Earth looks really cool. But it's a little bit jagged. There are harsh angles on it. We can make it look nicer than that. 
+		```
+		map: new THREE.TextureLoader().load('https://upload.wikimedia.org/wikipedia/commons/c/c4/Earthmap1000x500compac.jpg')
+		```
 
-        Currently our Earth geometry looks like this:
+		Collectively this looks like:
 
-        ```
-        var sphereGeometry = new THREE.SphereGeometry(2, 8, 8);
-        ```
+		```
+		var sphereMaterial = new THREE.MeshBasicMaterial({
+		  wireframe: false,
+		  map: new
+		  THREE.TextureLoader().load('https://upload.wikimedia.org/wikipedia/commons/c/c4/Earthmap1000x500compac.jpg')
+		});
+		```
 
-        Those last two numbers are the how many facets our Sphere has. If we give it more facets, the surface of the sphere looks smoother.
+		---
 
-        So change it to: 
+		### Pro tip!
+		This is a little weird here because we can't use local images the way we're used to in web development. We have to use
+		images that already exist on the internet. This can be an image you control on your server, or it can be an image that is freely available for general use. For the purposes of this lesson, we'll be using Wikimedia Commons images.
 
-        ```
-        var sphereGeometry = new THREE.SphereGeometry(2, 18, 18);
-        ```
+	  </script>
+	</section>
 
-      </script>
-    </section>
+	<section class="slide centered" data-markdown>
+	  <script type="text/template">
+		#Mapping an image to a Material
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Our planet has clouds
+		![](framework/img/workshop/painting.gif)
 
-        The freedom you have with THREE.JS is almost infinite. You can place some objects inside of other objects, intersecting with other objects, and play with the rules they follow as they do so. 
+		Remember that a Material is just the outer coating around a Geometry. Wrapping an image around a geometry is called MAPPING the image to that geometry.
 
-        To add clouds to our planet, we need another sphere for them to sit on. This sphere is just a hair bigger than our Earth sphere. Where our earth is 2 units wide, we'll make our cloud sphere 2.1 units wide.
+		Then when we make the Mesh, we combine that image wrap and the geometry into a new 3D object. This is where you have some real creative license.
+	  </script>
+	</section>
 
-        We'll call this one cloudSphere.
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Smoothing out the Earth
 
-        ```
-        var cloudSphereGeometry = new THREE.SphereGeometry(2.1, 18, 18);
-        var cloudSphereMaterial = new THREE.MeshBasicMaterial({
-          wireframe: false,
-          map: THREE.ImageUtils.loadTexture('clouds.png')
-        });
-        var cloudSphere = new THREE.Mesh(cloudSphereGeometry, cloudSphereMaterial);
-        scene.add(cloudSphere);
-        cloudSphere.position.set( 0, 3, 0);
-        ```
+		That Earth looks really cool. But it's a little bit jagged. There are harsh angles on it. We can make it look nicer than that.
 
-      </script>
-    </section>
+		Currently our Earth geometry looks like this:
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Wait that looks weird
+		```
+		var sphereGeometry = new THREE.SphereGeometry(2, 8, 8);
+		```
 
-        The cloud sphere rendered properly, but now you can't see the Earth beneath the clouds. That's no good at all. 
+		Those last two numbers are the how many facets our Sphere has. If we give it more facets, the surface of the sphere looks smoother.
 
-        We need to add two more options to the cloud sphere material: 
+		So change it to:
 
-        ```
-          transparent: true,
-          opacity: 0.6
-        ```
+		```
+		var sphereGeometry = new THREE.SphereGeometry(2, 18, 18);
+		```
 
-        With the transparency set to true, you can control the opacity of the cloud sphere to see through it to the earth sphere that sits inside it. It's a game of layers at this point. 
+	  </script>
+	</section>
 
-      </script>
-    </section>
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Our planet has clouds
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Add the animation
+		The freedom you have with THREE.JS is almost infinite. You can place some objects inside of other objects, intersecting with other objects, and play with the rules they follow as they do so.
 
-        The earth and the clouds spin at different rates. So we can adjust the animation loop to accomodate that. 
+		To add clouds to our planet, we need another sphere for them to sit on. This sphere is just a hair bigger than our Earth sphere. Where our earth is 2 units wide, we'll make our cloud sphere 2.1 units wide.
 
-        To add to the effect, we can slow them down significantly, but make them move in opposite directions to give the illusion of speed. 
+		We'll call this one cloudSphere.
 
-        ```
-        function animate() {
-          Sphere.rotation.y = Sphere.rotation.y + (Math.PI / 440);
-          cloudSphere.rotation.y = cloudSphere.rotation.y - (Math.PI / 1000);
-          renderer.render( scene, camera );
-          requestAnimationFrame( animate );
-        }
-        ```
+		```
+		var cloudSphereGeometry = new THREE.SphereGeometry(2.1, 18, 18);
+		var cloudSphereMaterial = new THREE.MeshBasicMaterial({
+		  wireframe: false,
+		  map: new
+		  THREE.TextureLoader().load('https://upload.wikimedia.org/wikipedia/commons/a/ad/Fair_Weather_Cloud_Map.jpg')
+		});
+		var cloudSphere = new THREE.Mesh(cloudSphereGeometry, cloudSphereMaterial);
+		scene.add(cloudSphere);
+		cloudSphere.position.set( 0, 3, 0);
+		```
 
-        To make it look a little more realistic, we can get rid of our plane beneath it (just comment out the line that says scene.add(fullPlane)).
+	  </script>
+	</section>
 
-        Then you can position the spheres at (0,0,0) to bring them into the centre of the universe.
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Wait that looks weird
 
-      </script>
-    </section>
+		The cloud sphere rendered properly, but now you can't see the Earth beneath the clouds. That's no good at all.
 
+		We need to add two more options to the cloud sphere material:
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # The final frontier
+		```
+		  transparent: true,
+		  opacity: 0.6
+		```
 
-        Space! It's super cool, and has lots of stars in it. Let's add some stars and, with that final flourish, show off one of the last THREE.JS tricks up our sleeve today.
+		With the transparency set to true, you can control the opacity of the cloud sphere to see through it to the earth sphere that sits inside it. It's a game of layers at this point.
 
-        Let's add one more sphere, but make this one HUGE, just like space. There's a file in the project folder called stars.png that you can use.
+	  </script>
+	</section>
 
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Add the animation
 
-        ```
-        var starSphereGeometry = new THREE.SphereGeometry(800, 18, 18);
-        var starSphereMaterial = new THREE.MeshBasicMaterial({
-          wireframe: false,
-          map: THREE.ImageUtils.loadTexture('stars.png'),
-        });
-        var starSphere = new THREE.Mesh(starSphereGeometry, starSphereMaterial);
-        scene.add(starSphere);
-        starSphere.position.set( 0, 0, 0);
+		The earth and the clouds spin at different rates. So we can adjust the animation loop to accomodate that.
 
-        ``` 
+		To add to the effect, we can slow them down significantly, but make them move in opposite directions to give the illusion of speed.
 
-      </script>
-    </section>
+		```
+		renderer.setAnimationLoop(function() {
+		  Sphere.rotation.y = Sphere.rotation.y + (Math.PI / 440);
+		  cloudSphere.rotation.y = cloudSphere.rotation.y - (Math.PI / 1000);
+		  renderer.render( scene, camera );
+		  requestAnimationFrame( animate );
+		})
+		```
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # More space
+		To make it look a little more realistic, we can get rid of our plane beneath it (just comment out the line that says scene.add(fullPlane)).
 
-        Right now, our stars are invisible. That's because they're on the outer edge of our giant sphere, well out of view of our camera that is currently INSIDE that giant sphere. 
+		Then you can position the spheres at (0,0,0) to bring them into the centre of the universe.
 
-        So we can add a "side" option to our starSphere. 
+	  </script>
+	</section>
 
-        ```
-        side: THREE.BackSide,
-        ```
+	<section class="slide centered" data-markdown>
+		<script type="text/template">
+			# Spaaaaaaaace
+			![](framework/img/workshop/spaaaaace.gif)
 
-        That will effectively invert the sphere and map the image on to its inside, allowing us to see the stars even while we're inside it. 
+			Earth not exciting enough for you? Go ahead and map some different images to our sphere, see how they look and what you can do to make it more interesting.
+			</script>
+	</section>
 
-        This trick is frequently called a skySphere or a SkyGlobe or, for Torontonians, a SkyDome. It allows us to maintain a sky effect around our world. 
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# The final frontier
 
-        TIP: Note that if you zoom too far out, the SkyDome disappears, then the Earth disappears. Notice how wide our SkyDome is and what the FAR attribute on our camera is. You can absolutely adjust the camera values to see further into the distance of space.
+		Space! It's super cool, and has lots of stars in it. Let's add some stars and, with that final flourish, show off one of the last THREE.JS tricks up our sleeve today.
 
-      </script>
-    </section>
+		Let's add one more sphere, but make this one HUGE, just like space. There's a file in the project folder called stars.png that you can use.
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Some finessing
 
-        The stars are a little bright, so we can dim them a bit with the same trick we applied to the cloudSphere: Some opacity adjustments.
+		```
+		var starSphereGeometry = new THREE.SphereGeometry(800, 18, 18);
+		var starSphereMaterial = new THREE.MeshBasicMaterial({
+		  wireframe: false,
+		  map: new THREE.TextureLoader().load('https://upload.wikimedia.org/wikipedia/commons/0/09/Night_stars_berlin.png'),
+		});
+		var starSphere = new THREE.Mesh(starSphereGeometry, starSphereMaterial);
+		scene.add(starSphere);
+		starSphere.position.set( 0, 0, 0);
 
-        ```
-        opacity: 0.4,
-        transparent: true,
-        ```
-        
-        Altogether your starSphere code looks a bit like this: 
+		```
 
-        ```
-        var starSphereGeometry = new THREE.SphereGeometry(800, 18, 18);
-        var starSphereMaterial = new THREE.MeshBasicMaterial({
-          wireframe: false,
-          opacity: 0.4,
-          transparent: true,
-          map: THREE.ImageUtils.loadTexture('stars.png'),
-          side: THREE.BackSide
-        });
-        var starSphere = new THREE.Mesh(starSphereGeometry, starSphereMaterial);
-        scene.add(starSphere);
-        starSphere.position.set( 0, 0, 0);
+	  </script>
+	</section>
 
-        ```
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# More space
 
-      </script>
-    </section>
+		Right now, our stars are invisible. That's because they're on the outer edge of our giant sphere, well out of view of our camera that is currently INSIDE that giant sphere.
 
-    <section class="slide title" data-markdown>
-      <script type="text/template">
-        # All done!
+		So we can add a "side" option to our starSphere.
 
-         </script>
-    </section>
+		```
+		side: THREE.BackSide,
+		```
 
-    <section class="slide" data-toc>
-      <h1>Extra resources</h1>
+		That will effectively invert the sphere and map the image on to its inside, allowing us to see the stars even while we're inside it.
 
-      <p>To keep you going, here are some extra links relating to THREE.JS that you may find useful.</p>
+		This trick is frequently called a skySphere or a SkyGlobe or, for Torontonians, a SkyDome. It allows us to maintain a sky effect around our world.
 
-      <ul>
-        <li>
-          <a href="https://threejs.org/docs/">The complete resource guide, all the methods.</a>
-        </li>
-        <li>
-          <a href="https://github.com/mrdoob/three.js/archive/master.zip">Download the latest version.</a>
-        </li>
-        <li>
-          <a href="https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene">Quick start guide for THREE.JS for people already familiar with JavaScript.</a>
-        </li>
-        <li>
-          <a href="https://www.awwwards.com/websites/three-js/">The best THREE.JS on the web</a>
-        </li>
-        <li>
-          <a href="https://www.udacity.com/course/interactive-3d-graphics--cs291">Udacity course on interactive 3D Graphics that uses THREE.JS as its coding language.</a>
-        </li>
-      </ul>
-    </section>
+		TIP: Note that if you zoom too far out, the SkyDome disappears, then the Earth disappears. Notice how wide our SkyDome is and what the FAR attribute on our camera is. You can absolutely adjust the camera values to see further into the distance of space.
 
-    <section class="slide last">
-      <h1>Thank you!</h1>
-      <h2 class="heading-bg">
-        <span>Intro to THREE.JS</span>
-      </h2>
+	  </script>
+	</section>
 
-      <!-- <img class="instructor" src="http://cl.ly/image/0r3Q3H110G36/profile-generic.jpg" alt="instructor name">
-      <h2><span class="cursive">with</span> Instructor Name</h2>
-      <ul>
-        <li><a href="mailto:">hello@email.com</a></li>
-        <li><a href="#">mywebsite.com</a></li>
-        <li><a href="http://twitter.com/">@twitter</a></li>
-      </ul> -->
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		#Some finessing
 
-      <p class="attribution">Slide presentation created by <a href="http://wolfewylie.com">William Wolfe-Wylie</a> based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
-    </section>
+		The stars are a little bright, so we can dim them a bit with the same trick we applied to the cloudSphere: Some opacity adjustments.
+
+		```
+		opacity: 0.4,
+		transparent: true,
+		```
+
+		Altogether your starSphere code looks a bit like this:
+
+		```
+		var starSphereGeometry = new THREE.SphereGeometry(800, 18, 18);
+		var starSphereMaterial = new THREE.MeshBasicMaterial({
+		  wireframe: false,
+		  opacity: 0.4,
+		  transparent: true,
+		  map: new THREE.TextureLoader().load('stars.png'),
+		  side: THREE.BackSide
+		});
+		var starSphere = new THREE.Mesh(starSphereGeometry, starSphereMaterial);
+		scene.add(starSphere);
+		starSphere.position.set( 0, 0, 0);
+
+		```
+
+	  </script>
+	</section>
+
+	<section class="slide centered" data-markdown>
+	  <script type="text/template">
+		# Stretch goals!
+
+		![](framework/img/workshop/stretch.gif)
+		 </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Resize your window!
+
+		You may have noticed by now that when you resize your browser window, the animation you've built doesn't adjust automatically. That's kind of irritating, right?
+
+		Let's fix it!
+
+		Until now, we've been working with ThreeJS's built-in functions. But of course the entire broad language of JavaScript is still open to us, including even listeners.
+
+		We can use the window's onResize event listener to pay attention to when the user resizes their browser window!
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Resize your window!
+
+		The onResize function looks like this:
+
+		```
+		window.onresize = function() {
+		  //your code goes here
+		}
+		```
+
+		Essentially, it creates a listener for whenever your browser changes. This includes when you rotate your phone! Fun!
+
+		There are three things we
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Resize your window!
+
+		There are three things we need to update to make it nice and smoother
+
+		* The camera's aspect ratio (you just changed the aspect ratio of the screen, we should tell the camera what the new numbers are).
+		* The renderer's aspect ratio (basically: the size of the canvas element in our html that we're actually drawing on throughout all of these exercises.)
+		* The projection matrix of the camera (failing to update this means everything will squish or stretch ... give it a try without this one, just to see what happens. It's fun, I promise.)
+
+
+		  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# Resize your window!
+
+		The code to actually do those three things is
+
+		```
+		camera.aspect = window.innerWidth/window.innerHeight;
+		renderer.setSize(window.innerWidth,window.innerHeight);
+		camera.updateProjectionMatrix();
+		```
+
+		Collectively that looks like:
+
+		```
+		window.onresize = function() {
+		  camera.aspect = window.innerWidth/window.innerHeight;
+		  camera.updateProjectionMatrix();
+		  renderer.setSize(window.innerWidth,window.innerHeight);
+		}
+		```
+
+		Go ahead and give it a try!
+
+		  </script>
+	</section>
+
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# WebVR!
+
+		One of the great parts about working in 3D is the opportunity to present your work in a proper VR-enabled device.
+
+		This can include headsets or smartphones inserted into the right viewer.
+
+		ThreeJS includes some functions that will automatically split the scene you build into the two channels needed to be fed into each eye, creating the 3D virtual reality experience.
+
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# WebVR!
+
+		The first thing to do is include the WebVR javascript file. It's included in the "project_stretch_goals" folder.
+
+		```HTML
+		<!-- <script src="WebVR.js"></script> -->
+		```
+
+		This file is built and maintained by the same folks who keep ThreeJS up to speed for us, but it's still a relatively uncommon demand from developers so it's distributed as a separate file.
+
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+		<script type="text/template">
+		# WebVR!
+
+		Once it's importing the script, you can tell your program that it can be VR-enabled.
+
+		```HTML
+		<!-- <script src="WebVR.js"></script> -->
+		```
+
+		</script>
+	</section>
+
+	<section class="slide centered" data-markdown>
+	  <script type="text/template">
+		# All done!
+
+		![](framework/img/workshop/thatsall.gif)
+		 </script>
+	</section>
+
+	<section class="slide" data-toc>
+	  <h1>Extra resources</h1>
+
+	  <p>To keep you going, here are some extra links relating to THREE.JS that you may find useful.</p>
+
+	  <ul>
+		<li>
+		  <a href="https://threejs.org/docs/">The complete resource guide, all the methods.</a>
+		</li>
+		<li>
+		  <a href="https://github.com/mrdoob/three.js/archive/master.zip">Download the latest version.</a>
+		</li>
+		<li>
+		  <a href="https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene">Quick start guide for THREE.JS for people already familiar with JavaScript.</a>
+		</li>
+		<li>
+		  <a href="https://www.awwwards.com/websites/three-js/">The best THREE.JS on the web</a>
+		</li>
+		<li>
+		  <a href="https://www.udacity.com/course/interactive-3d-graphics--cs291">Udacity course on interactive 3D Graphics that uses THREE.JS as its coding language.</a>
+		</li>
+	  </ul>
+	</section>
+
+	<section class="slide last">
+	  <h1>Thank you!</h1>
+	  <h2 class="heading-bg">
+		<span>Intro to THREE.JS</span>
+	  </h2>
+
+	  <!-- <img class="instructor" src="http://cl.ly/image/0r3Q3H110G36/profile-generic.jpg" alt="instructor name">
+	  <h2><span class="cursive">with</span> Instructor Name</h2>
+	  <ul>
+		<li><a href="mailto:">hello@email.com</a></li>
+		<li><a href="#">mywebsite.com</a></li>
+		<li><a href="http://twitter.com/">@twitter</a></li>
+	  </ul> -->
+
+	  <p class="attribution">Slide presentation created by <a href="http://wolfewylie.com">William Wolfe-Wylie</a> based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
+	</section>
 
   </main><!-- cls main section -->
 
@@ -1726,13 +1857,13 @@ var fails = 'This string's value is not going to work!';
   <script>hljs.initHighlightingOnLoad();</script>
   <script src="framework/scripts/llc.js"></script>
   <script>
-    var slideshow = new SlideShow();
+	var slideshow = new SlideShow();
 
-    // Grabs all the .snippet elements
-    var snippets = document.querySelectorAll('.snippet');
-    for(var i=0; i<snippets.length; i++) {
-      new CSSSnippet(snippets[i]);
-    }
+	// Grabs all the .snippet elements
+	var snippets = document.querySelectorAll('.snippet');
+	for(var i=0; i<snippets.length; i++) {
+	  new CSSSnippet(snippets[i]);
+	}
   </script>
   </body>
 </html>

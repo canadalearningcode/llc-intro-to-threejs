@@ -20,15 +20,17 @@
 	camera.lookAt(0,0,0);
 
 	var renderer = new THREE.WebGLRenderer();
-	renderer.setSize( window.innerWidth, window.innerHeight );
+	renderer.setSize( window.innerWidth, window.innerHeight);
 	document.getElementById('myThreeJSproject').appendChild( renderer.domElement );
 
 	var controls = new THREE.OrbitControls(camera, renderer.domElement);
 
-	var sphereGeometry = new THREE.SphereGeometry(2, 18, 18);
+  var sphereGeometry = new THREE.SphereGeometry(2, 18, 18);
+  var sphereTexture = new
+  THREE.TextureLoader().load('https://upload.wikimedia.org/wikipedia/commons/c/c4/Earthmap1000x500compac.jpg');
     var sphereMaterial = new THREE.MeshBasicMaterial({
       wireframe: false,
-      map: THREE.ImageUtils.loadTexture('earth.jpg')
+      map: sphereTexture
     });
     var Sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
     scene.add(Sphere);
@@ -39,7 +41,8 @@
       wireframe: false,
       transparent: true,
       opacity: 0.6,
-      map: THREE.ImageUtils.loadTexture('clouds.png')
+      map: new
+      THREE.TextureLoader().load('https://upload.wikimedia.org/wikipedia/commons/a/ad/Fair_Weather_Cloud_Map.jpg')
     });
     var cloudSphere = new THREE.Mesh(cloudSphereGeometry, cloudSphereMaterial);
     scene.add(cloudSphere);
@@ -50,23 +53,18 @@
       wireframe: false,
       opacity: 0.4,
       transparent: true,
-      map: THREE.ImageUtils.loadTexture('stars.png'),
+      map: new THREE.TextureLoader().load('https://upload.wikimedia.org/wikipedia/commons/0/09/Night_stars_berlin.png'),
       side: THREE.BackSide
     });
     var starSphere = new THREE.Mesh(starSphereGeometry, starSphereMaterial);
     scene.add(starSphere);
     starSphere.position.set( 0, 0, 0);
 
-	animate();
-
-	function animate() {
-		Sphere.rotation.y = Sphere.rotation.y + (Math.PI / 440);
-		cloudSphere.rotation.y = cloudSphere.rotation.y - (Math.PI / 1000);
-		renderer.render( scene, camera );
-		requestAnimationFrame( animate );
-	}
-
-
+    renderer.setAnimationLoop(function() {
+     	Sphere.rotation.y = Sphere.rotation.y + (Math.PI / 440);
+		  cloudSphere.rotation.y = cloudSphere.rotation.y - (Math.PI / 1000);
+		  renderer.render( scene, camera );
+    });
 </script>
 
 </body>

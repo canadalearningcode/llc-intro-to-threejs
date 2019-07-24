@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My First threeJS project</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="myThreeJSproject"></div>
+
+<script src="three.min.js"></script>
+<!-- <script src="OrbitControls.js"></script> -->
+<!-- <script src="WebVR.js"></script> -->
+<script>
+  
+  var scene = new THREE.Scene();
+  // function checkAvailability() {
+  //   if (navigator.getVRDisplays !== undefined) {
+  //       navigator.getVRDisplays().then(function (displays) {
+  //         if (displays.length === 0) {
+  //           return false;
+  //         } else {
+  //           return true;
+  //         }
+  //       });
+  //     } else {
+  //       return false;
+  //     }  
+  //   }
+  
+    
+  var camera = new THREE.PerspectiveCamera( 35, window.innerWidth / window.innerHeight, 0.1, 1000 );
+  // camera.position.set(0,5,20)
+  // camera.lookAt(0,0,0);
+  
+  var renderer = new THREE.WebGLRenderer();
+  renderer.setSize( window.innerWidth, window.innerHeight);
+  renderer.vr.enabled = true;
+  document.getElementById('myThreeJSproject').appendChild( renderer.domElement );
+  // if (checkAvailability()) {
+    // document.body.appendChild(WEBVR.createButton(renderer));
+  // }
+
+	// var controls = new THREE.OrbitControls(camera, renderer.domElement);
+
+  var sphereGeometry = new THREE.SphereGeometry(2, 18, 18);
+
+  var sphereMaterial = new THREE.MeshBasicMaterial({
+    wireframe: false,
+    map: new
+    THREE.TextureLoader().load('https://upload.wikimedia.org/wikipedia/commons/c/c4/Earthmap1000x500compac.jpg')
+  });
+  
+  var Sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+  scene.add(Sphere);
+  Sphere.position.set( 0, 0, -10);
+
+  var cloudSphereGeometry = new THREE.SphereGeometry(2.05, 18, 18);
+  var cloudSphereMaterial = new THREE.MeshBasicMaterial({
+    wireframe: false,
+    transparent: true,
+    opacity: 0.6,
+    map: new THREE.TextureLoader().load('https://upload.wikimedia.org/wikipedia/commons/a/ad/Fair_Weather_Cloud_Map.jpg')
+  });
+  var cloudSphere = new THREE.Mesh(cloudSphereGeometry, cloudSphereMaterial);
+  scene.add(cloudSphere);
+  cloudSphere.position.set( 0, 0, -10);
+
+  var starSphereGeometry = new THREE.SphereGeometry(800, 18, 18);
+  var starSphereMaterial = new THREE.MeshBasicMaterial({
+    wireframe: false,
+    opacity: 0.4,
+    transparent: true,
+    map: new
+    THREE.TextureLoader().load('https://upload.wikimedia.org/wikipedia/commons/0/09/Night_stars_berlin.png'),
+    side: THREE.BackSide
+  });
+  
+  var starSphere = new THREE.Mesh(starSphereGeometry, starSphereMaterial);
+  scene.add(starSphere);
+  starSphere.position.set( 0, 0, -10);
+
+  renderer.setAnimationLoop(function() {
+    Sphere.rotation.y = Sphere.rotation.y + (Math.PI / 440);
+    cloudSphere.rotation.y = cloudSphere.rotation.y - (Math.PI / 1000);
+    renderer.render( scene, camera );
+  });
+
+  window.onresize = function() {
+    camera.aspect = window.innerWidth/window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth,window.innerHeight);
+  }
+
+</script>
+
+</body>
+</html>

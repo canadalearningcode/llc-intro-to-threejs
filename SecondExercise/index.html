@@ -41,12 +41,9 @@
     scene.add(Sphere);
     Sphere.position.set( 0, 3, 0);
 
-	animate();
-
-	function animate() {
+	renderer.setAnimationLoop(function() {
 		renderer.render( scene, camera );
-		requestAnimationFrame( animate );
-	}
+	});
 
 
 </script>

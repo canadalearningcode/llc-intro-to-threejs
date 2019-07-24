@@ -1,6 +1,8 @@
-#Ladies Learning Code
+# TESTING: Not Yet Available to Chapters
 
-##Intro to THREE.JS
+# Ladies Learning Code
+
+## Intro to THREE.JS
 
 A full day introductory to THREE.JS workshop. Students should already have basic understanding of HTML & CSS.
 

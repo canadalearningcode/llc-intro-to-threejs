@@ -4,7 +4,7 @@ We want to be able to dive right in and start learning at the workshop so there 
 
 HOW TO PREPARE:
  
-1. Download Google Chrome: To download Chrome, go here: http://www.google.com/chrome
+1. This lesson really works properly in Mozilla Firefox instead of Chrome or other browsers. Download Firefox: To download Chrome, go here: https://www.mozilla.org/en-US/firefox/new/
 2. Download Atom Editor: http://atom.io (Sublime Text or Text Wrangler work okay, too!)
 3. Download the Learner Materials here: https://github.com/ladieslearningcode/llc-intro-to-threeJS/archive/master.zip
  
