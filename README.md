@@ -6,7 +6,15 @@
 
 A full day introductory to THREE.JS workshop. Students should already have basic understanding of HTML & CSS.
 
-<p class="left">Content created by <a href="http://www.wolfewylie.com">William Wolfe-Wylie</a>
+### Quick links
+
+Instructor notes: https://github.com/ladieslearningcode/llc-intro-to-threejs/notes.html
+
+Slides: https://github.com/ladieslearningcode/llc-intro-to-threejs/slides.html
+
+### Attributions
+
+Content created by <a href="http://www.wolfewylie.com">William Wolfe-Wylie</a>
 
 Created by [Christina Truong](http://christinatruong.com) and [William Wolfe-Wylie](http://www.wolfewylie.com) for [Ladies Learning Code](http://ladieslearningcode.com).
 

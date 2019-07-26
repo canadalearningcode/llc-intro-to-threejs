@@ -44,7 +44,7 @@ DRAG AROUND -->
 
 		<h2>Download<br> & Install</h2>
 		<ol class="downloads">
-		  <li>Learner files (zip file): <a href="https://github.com/ladieslearningcode/llc-intro-to-threejs/archive/master.zip">http://bit.ly/llc-threejs-intro</a>
+		  <li>Learner files (zip file): <a href="https://github.com/ladieslearningcode/llc-intro-to-threejs/archive/master.zip">http://bit.ly/llc-threejs</a>
 			<ul>
 			  <li>unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
 			  <li>open <em>slides.html</em> in the browser to view the slides</li>
@@ -53,6 +53,7 @@ DRAG AROUND -->
 		  <li>Atom Editor: <a href="http://atom.io">http://atom.io</a></li>
 		  <li>Firefox Browser: <a
 			  href="https://www.mozilla.org/en-US/firefox/new/">https://www.firefox.com/</a>
+		  </li>
 		  </li>
 		</ol>
 	  </div>
@@ -77,10 +78,10 @@ DRAG AROUND -->
 		<li><a href="http://website.com">website.com</a></li>
 		<li><a href="http://twitter.com/">@twitter</a></li>
 	  </ul>
-<!--
+
 	  <div class="sponsor">
 		<p>In partnership with<br> <img src="framework/img/telus-logo-white.svg" alt="Telus"></p>
-	  </div>-->
+	  </div>
 	  <footer>
 		<a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
 		<p class="left">Content created by <a href="http://www.wolfewylie.com">William Wolfe-Wylie</a> for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
@@ -1750,45 +1751,198 @@ var fails = 'This string's value is not going to work!';
 	</section>
 
 
-	<section class="slide" data-markdown>
+	<section class="slide centered" data-markdown>
 	  <script type="text/template">
-		# WebVR!
+		# Earth has a moon!
 
-		One of the great parts about working in 3D is the opportunity to present your work in a proper VR-enabled device.
+		![](framework/img/workshop/moon.gif)
 
-		This can include headsets or smartphones inserted into the right viewer.
-
-		ThreeJS includes some functions that will automatically split the scene you build into the two channels needed to be fed into each eye, creating the 3D virtual reality experience.
+		We should make a moon, and then have it orbit around the Earth.
 
 	  </script>
 	</section>
 
 	<section class="slide" data-markdown>
 	  <script type="text/template">
-		# WebVR!
+		# The moon!
 
-		The first thing to do is include the WebVR javascript file. It's included in the "project_stretch_goals" folder.
+		The tricky part about a moon is it doesn't orbit around the center of the universe, it orbits around the Earth. And, since we can place the Earth anywhere we want, the moon needs to orbit around any arbitrary point in our scene.
 
-		```HTML
-		<!-- <script src="WebVR.js"></script> -->
+		This kind of relative motion is what allows animators to move an eye within a character's head, a window within a house or a leaf upon a tree. Because the eye moves relative to the character, the window moves relative to the house adn the leaf moves relative to the tree.
+
+		The technical term for this? Groups. We can make groups of objects that act as a single unit within the universe.
+
+	  </script>
+	</section>
+
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+		# The moon: groups
+
+		Just as we've been adding our objects to the scene, you can add objects to groups and then add the group to the scene.
+
+		Let's start with that: Creating a group. We can call it whatever we want.
+
+		```
+		var earthGroup = new THREE.Group();
 		```
 
-		This file is built and maintained by the same folks who keep ThreeJS up to speed for us, but it's still a relatively uncommon demand from developers so it's distributed as a separate file.
+		We add this line as part of our setup code, right at the top before we create any of our objects.
+
 
 	  </script>
 	</section>
 
 	<section class="slide" data-markdown>
 		<script type="text/template">
-		# WebVR!
+		# The moon: groups
 
-		Once it's importing the script, you can tell your program that it can be VR-enabled.
+		In our main project, we created objects and then added them to our scene. But this time we're going to add them to our group.
 
-		```HTML
-		<!-- <script src="WebVR.js"></script> -->
+		```
+		earthGroup.add(Sphere);
+		```
+
+		This replaces the old line:
+
+		```
+		scene.add(Sphere);
+		```
+
+		Do the same for the cloudSphere
+
+		```
+		earthGroup.add(cloudSphere);
 		```
 
 		</script>
+	</section>
+
+	<section class="slide" data-markdown>
+		<script type="text/template">
+		# Now add the moon
+
+		Adding the moon is the same exercise as our other spheres that we made for the Earth, the clouds and the stars.
+
+		```
+		var moonSphereGeometry = new THREE.SphereGeometry(1,18,18);
+		var moonSphereMaterial = new THREE.MeshBasicMaterial({
+			wireframe:false,
+			transparent:false,
+			opacity:1,
+			map: new THREE.TextureLoader().load('https://upload.wikimedia.org/wikipedia/commons/2/23/Censorinus_lunar_crater_map.jpg')
+		})
+		var moonSphere = new THREE.Mesh(moonSphereGeometry, moonSphereMaterial);
+		```
+
+		Then we should position our moon so it's offset from the Earth. Because ... the moon is not inside the earth, it's beside it.
+
+		```
+		moonSphere.position.set(-5,0,-5);
+		```
+
+		</script>
+	</section>
+
+	<section class="slide" data-markdown>
+		<script type="text/template">
+		# Add everything to your scene
+
+		Then we add our Moon to our Earth group again, so it knows that its centre of the universe is the Earth, and not the middle
+		of our scene.
+
+		```
+		earthGroup.add(moonSphere);
+		```
+
+		Up until now we've only been adding the objects to our group. Nothing is actually in our scene yet. Let's fix that. While we're at it, we should also tell our group where its position should be in the scene.
+
+		```
+		scene.add(earthGroup);
+		earthGroup.position.set(0, 0, -10);
+		```
+
+		</script>
+	</section>
+
+	<section class="slide" data-markdown>
+		<script type="text/template">
+		# Creating an orbital path
+
+		This is the fun part: Making the moon orbit the earth. It takes a little bit of math.
+
+		One of the most popular ways to animate in ThreeJS is to use trigonometric functions like sine and cosine. The reason is because they loop between predictable values like 1 and -1. That looping behaviour means you always know the range of behaviour and can work within it.
+
+		![](framework/img/workshop/coswave.gif)
+		</script>
+	</section>
+
+	<section class="slide" data-markdown>
+		<script type="text/template">
+		# Creating an orbital path
+
+		Floating between 1 and -1 is very useful for creating orbits. Because we can then multiply the value by  10 and suddenly it's been 10 and -10, which means we can offset the moon by 10 units from the center of the earth with ease.
+
+		Animations in ThreeJS very frequently use sine and cosine functions for this exact reason.
+
+		So, naturally, that calculation appears in the animation render loop. On every animation loop, we can reposition the moon.
+
+		```
+		moonSphere.position.set(Math.cos(Date.now() * 0.001) * 10, 0, Math.sin(Date.now() * 0.001) * 10);
+		```
+
+		</script>
+	</section>
+
+	<section class="slide centered" data-markdown>
+	  <script type="text/template">
+		# Looking at the orbital path
+
+		This is a really long bit of code, so let's break it down:
+
+		```
+		moonSphere.position.set
+		```
+
+		This is the method that, you guessed it, sets the position of the object. It takes three values as x, y and z coordinates.
+
+		```
+		Math.cos(Date.now() * 0.001) * 10
+		```
+
+		This is the X coordinate. It takes the current time, applies a cosine calculation and then reduces it to 1000th of that value. This slows down the animation. You can change this 0.001 value to anything else to see how it changes the animation speed.
+
+		```
+		0
+		```
+
+		That's the Y value. You'll notice it's always zero to keep us always on the same plane of the animation.
+
+		```
+		Math.sin(Date.now() * 0.001) * 10
+		```
+
+		The Z value, same as the X value but sin instead of cosine to get the reverse number. This just ensures that we have a nice circular loop. Try swapping it for a cos value to see what happens in your animation.
+
+
+		 </script>
+	</section>
+
+	<section class="slide centered" data-markdown>
+	  <script type="text/template">
+		# One final flourish
+
+		![](framework/img/workshop/flourish.gif)
+
+		Wouldn't it be nice if the moon rotated as it spun around the Earth? Just like it does in real life?
+
+		```
+		moonSphere.rotation.y = moonSphere.rotation.y - (Math.PI / 440);
+		```
+
+		Delightful.
+
+		 </script>
 	</section>
 
 	<section class="slide centered" data-markdown>

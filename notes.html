@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Ladies Learning Code</title>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- opens all links in a new window -->
+  <base target="_blank">
+</head>
+
+<!-- Timer/progress bar: Define the presentation duration using "data-duration" in minutes. -->
+<body data-duration="360">
+  <main>
+	<section class="slide" data-markdown>
+	  <script type="text/template">
+      # Intro to ThreeJS
+      ## Instructor Notes
+
+      This introduction to ThreeJS course is built by William Wolfe-Wylie and he can be reached at william@wolfewylie.com or @wolfewylie any time if you have questions or concerns.
+
+      The JavaScript refresher at the beginning of the course is built by Christina Truong.
+
+      This workshop currently depends on internet connectivity for mapping images to the 3D objects and making them into planets. Absent an internet connection, I think it makes sense to turn the images into colours to get a similar effect.
+
+      Most of this is meant as a code-along. There are opportunities for learners to break off on their own and add new images, mess with the vertices and segments in their 3D objects and generally play with their creations.
+
+      The first exercise is all about creating 3D objects and placing them in the world. There is no interactivity yet. Opportunities to play include different object types (sphere, cube, etc.) but mostly different object sizes. Change the numbers in the new SphereGeometry and new PlaneGeometry commands and see what happens.
+
+      The second exercise starts with a plan and a sphere already in place. The goal is then to animate them, move them around, and add user-controls to the interface. Opportunities to play include changing the plane of rotation from the X to the Y to the Z axes to see how they work. You could also use the opportunity to modify other properties than rotation. Sphere.scale = sphere.scale + 0.01, for example, would be a great way to show animated, and inifite, growth.
+
+      The final project is about nesting objects inside other objects and animating them relative to each other. It's also about mapping images to 3D objects to make them become, not a sphere, but a planet. Encourage learners to map their own images to create "mars" or "jupiter." Take it further and have them make the sphere a basketball and the universe a giant gym. Show how scale is usually just a question of what image you apply to the object.
+
+      ## Common struggle points:
+
+      * Animation. The fact that something loops over itself 60 times per second is a mind stretch for a lot of learners.
+      * Typos. The URLs for the images we're using come from Wikimedia Commons and are long. The reason we're using theses images is their open CORS policy. Not all images on the web will work. Encourage learners to find their own URLs and copy-and-paste them into their code for the sake of accuracy and creativity.
+      * The numbers. The geometry commands take seemingly random numbers and it's difficult to understand what they do and why. Spend some time as you build these objects to change those numbers with learners, show what they do, and how they can be used for creative ends.
+
+    </script>
+	</section>
+
+  </main><!-- cls main section -->
+
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Uncomment the plugins you need -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+	var slideshow = new SlideShow();
+
+	// Grabs all the .snippet elements
+	var snippets = document.querySelectorAll('.snippet');
+	for(var i=0; i<snippets.length; i++) {
+	  new CSSSnippet(snippets[i]);
+	}
+  </script>
+  </body>
+</html>
